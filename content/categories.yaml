@@ -1,0 +1,15 @@
+- { slug: marketing, name: Marketing, description: "Positioning, messaging, copy and campaigns." }
+- { slug: sales, name: Sales, description: "Outreach, lead research, decks and sales process." }
+- { slug: seo, name: SEO, description: "Audits, keyword research and search content." }
+- { slug: customers, name: Customers, description: "Interviews, feedback and customer insight." }
+- { slug: research, name: Research, description: "Market, competitor and topic research." }
+- { slug: content, name: Content, description: "Briefs, posts, newsletters and founder writing." }
+- { slug: product, name: Product, description: "Strategy, specs, roadmaps and user research." }
+- { slug: design, name: Design, description: "Brand, UI and visual work." }
+- { slug: development, name: Development, description: "Engineering tasks for small product teams." }
+- { slug: analytics, name: Analytics, description: "Metrics, funnels and data analysis." }
+- { slug: growth, name: Growth, description: "Experiments, acquisition and retention." }
+- { slug: fundraising, name: Fundraising, description: "Investor research, decks and updates." }
+- { slug: finance, name: Finance, description: "Models, budgets, pricing and unit economics." }
+- { slug: operations, name: Operations, description: "Processes, planning and day-to-day running." }
+- { slug: hiring, name: Hiring, description: "Job descriptions, sourcing and interviews." }

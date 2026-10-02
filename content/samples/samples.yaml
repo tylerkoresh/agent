@@ -1,0 +1,279 @@
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-competitor-research
+  name: Competitor Research (sample)
+  category: research
+  shortDescription: Compare competitors on positioning, pricing and features. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Compare competitors on positioning, pricing and features.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - competitors
+  - market
+  featured: true
+  verification: verified
+  status: published
+  lastTestedAt: '2026-09-20'
+  agents:
+  - agent: claude-code
+    evidence: tested
+    note: Fixture evidence.
+  - agent: codex
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-landing-page-copy
+  name: Landing Page Copy (sample)
+  category: marketing
+  shortDescription: Draft landing page copy from a product brief. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Draft landing page copy from a product brief.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - copywriting
+  - landing page
+  featured: true
+  verification: community
+  status: published
+  lastTestedAt: ''
+  agents:
+  - agent: claude-code
+    evidence: declared
+    note: Fixture evidence.
+  - agent: cursor
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-seo-audit
+  name: SEO Audit (sample)
+  category: seo
+  shortDescription: Audit a site for on-page SEO issues. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Audit a site for on-page SEO issues.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - audit
+  - technical seo
+  featured: false
+  verification: verified
+  status: published
+  lastTestedAt: '2026-09-22'
+  agents:
+  - agent: claude-code
+    evidence: tested
+    note: Fixture evidence.
+  - agent: gemini-cli
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-customer-interview-analysis
+  name: Customer Interview Analysis (sample)
+  category: customers
+  shortDescription: Turn interview notes into themes and quotes. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Turn interview notes into themes and quotes.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - interviews
+  - research
+  featured: false
+  verification: experimental
+  status: published
+  lastTestedAt: ''
+  agents:
+  - agent: codex
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-investor-research
+  name: Investor Research (sample)
+  category: fundraising
+  shortDescription: Build a target investor list from a company profile. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Build a target investor list from a company profile.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - investors
+  - vc
+  featured: false
+  verification: community
+  status: published
+  lastTestedAt: ''
+  agents:
+  - agent: claude-code
+    evidence: declared
+    note: Fixture evidence.
+  - agent: codex
+    evidence: declared
+    note: Fixture evidence.
+  - agent: gemini-cli
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-job-description
+  name: Job Description (sample)
+  category: hiring
+  shortDescription: Write a clear job description from a role brief. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Write a clear job description from a role brief.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - jobs
+  - recruiting
+  featured: false
+  verification: community
+  status: published
+  lastTestedAt: ''
+  agents:
+  - agent: claude-code
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-pricing-analysis
+  name: Pricing Analysis (sample)
+  category: finance
+  shortDescription: Review pricing against costs and alternatives. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Review pricing against costs and alternatives.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - pricing
+  - saas
+  featured: false
+  verification: experimental
+  status: published
+  lastTestedAt: ''
+  agents:
+  - agent: cursor
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-sales-outreach
+  name: Sales Outreach (sample)
+  category: sales
+  shortDescription: Draft personalised cold outreach sequences. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Draft personalised cold outreach sequences.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - outbound
+  - email
+  featured: false
+  verification: community
+  status: draft
+  lastTestedAt: ''
+  agents:
+  - agent: claude-code
+    evidence: declared
+    note: Fixture evidence.
+  - agent: other
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
+- creatorName: Sample fixture
+  creatorUrl: ''
+  sourceUrl: https://example.com/sample-skill
+  repoUrl: ''
+  licenseSpdx: NOASSERTION
+  attribution: Sample fixture for development only. Not a real Skill.
+  isSample: true
+  distribution: link_only
+  version: 0.0.0
+  reviewNotes: Fixture. Verification and agent evidence here exist only to exercise the UI.
+  slug: sample-launch-email
+  name: Launch Email (sample)
+  category: marketing
+  shortDescription: Write a product launch email. Sample data for development.
+  fullDescription: This is a development fixture used to test the catalog. It does not describe a real
+    Skill. Write a product launch email.
+  whoItsFor: Founders using this to test the catalog UI.
+  tags:
+  - email
+  - launch
+  featured: false
+  verification: community
+  status: unpublished
+  lastTestedAt: ''
+  agents:
+  - agent: claude-code
+    evidence: declared
+    note: Fixture evidence.
+  addedAt: '2026-09-01'
