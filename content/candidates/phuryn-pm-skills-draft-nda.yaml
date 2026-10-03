@@ -1,0 +1,72 @@
+id: phuryn-pm-skills-draft-nda
+name: Draft NDA
+summary: Drafts a non-disclosure agreement.
+category: operations
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/phuryn/pm-skills/tree/8607e3b077817f89bf4a9b623246219734ac3be0/pm-toolkit/skills/draft-nda
+repoUrl: https://github.com/phuryn/pm-skills
+repoSubpath: pm-toolkit/skills/draft-nda
+pinnedRef: 8607e3b077817f89bf4a9b623246219734ac3be0
+inspectedAt: 2026-10-03
+creator:
+  name: phuryn
+  url: https://github.com/phuryn
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 8607e3b
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: phuryn/pm-skills README.md line 15 @ 8607e3b mentions it in a compatibility/install context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: phuryn/pm-skills README.md line 84 @ 8607e3b mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Product-management Skills for discovery, go-to-market and strategy that a founder can use directly.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 1023
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - examples
+  assessment: "1023 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: examples. Descriptions and outlines
+    reviewed. Short bodies mean the added value over a general model is mainly the structure."
+specConformance: pass
+gates:
+  useful: no
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: Skills are short (median under 500 words) and template-like.
+rejectionReason: Generates a legal agreement; the output is legal text a founder should not rely on without a lawyer.
+sources:
+  - url: https://github.com/phuryn/pm-skills/tree/8607e3b077817f89bf4a9b623246219734ac3be0/pm-toolkit/skills/draft-nda
+    note: Skill folder at the inspected commit
+  - url: https://github.com/phuryn/pm-skills/blob/8607e3b077817f89bf4a9b623246219734ac3be0/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/phuryn/pm-skills
+    note: Repository

@@ -1,0 +1,71 @@
+id: ericosiu-ai-marketing-skills-revenue-intelligence
+name: Revenue Intelligence
+summary: Revenue analysis workflow.
+category: analytics
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/ericosiu/ai-marketing-skills/tree/8088e1a167804d5615f6e982f62e5b4b6ff8f2f1/revenue-intelligence
+repoUrl: https://github.com/ericosiu/ai-marketing-skills
+repoSubpath: revenue-intelligence
+pinnedRef: 8088e1a167804d5615f6e982f62e5b4b6ff8f2f1
+inspectedAt: 2026-10-03
+creator:
+  name: ericosiu
+  url: https://github.com/ericosiu
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 8088e1a
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: ericosiu/ai-marketing-skills README.md line 74 @ 8088e1a mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Growth workflows from a marketing operator; several are tied to specific vendor tools.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 1081
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "1081 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: tables, templates/code blocks,
+    examples. Descriptions and outlines reviewed."
+specConformance: fail
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: no
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: "Only about half of this repository's Skills pass the spec check; many have no description. Spec checks
+  failed: frontmatterParses, nameValid, nameMatchesDir, descriptionPresent."
+rejectionReason: No frontmatter description.
+sources:
+  - url: https://github.com/ericosiu/ai-marketing-skills/tree/8088e1a167804d5615f6e982f62e5b4b6ff8f2f1/revenue-intelligence
+    note: Skill folder at the inspected commit
+  - url: https://github.com/ericosiu/ai-marketing-skills/blob/8088e1a167804d5615f6e982f62e5b4b6ff8f2f1/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/ericosiu/ai-marketing-skills
+    note: Repository

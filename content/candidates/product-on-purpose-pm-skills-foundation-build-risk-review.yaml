@@ -1,0 +1,85 @@
+id: product-on-purpose-pm-skills-foundation-build-risk-review
+name: Pre-Build Risk Review
+summary: Names the biggest risks before building a feature or product
+category: product
+tags:
+  - risk
+status: researching
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/product-on-purpose/pm-skills/tree/1cef1a9eae10017389863d51e289e0ae41e17fcb/skills/foundation-build-risk-review
+repoUrl: https://github.com/product-on-purpose/pm-skills
+repoSubpath: skills/foundation-build-risk-review
+pinnedRef: 1cef1a9eae10017389863d51e289e0ae41e17fcb
+inspectedAt: 2026-10-03
+creator:
+  name: product-on-purpose
+  url: https://github.com/product-on-purpose
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: Apache-2.0
+  evidence: LICENSE at repository root (detected Apache-2.0) @ 1cef1a9
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: product-on-purpose/pm-skills README.md line 340 @ 1cef1a9 mentions it in a compatibility/install context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: product-on-purpose/pm-skills README.md line 147 @ 1cef1a9 mentions it in a compatibility/install context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: product-on-purpose/pm-skills README.md line 147 @ 1cef1a9 mentions it in a compatibility/install context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: product-on-purpose/pm-skills README.md line 147 @ 1cef1a9 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Product-management Skills (discovery, definition, delivery, measurement) usable by a founder
+  acting as product lead.
+primaryUse: Names the biggest risks before building a feature or product
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1211
+    references: 4
+    scripts: 0
+    evals: true
+    structure:
+      - tables
+      - checklists
+      - examples
+  assessment: "1211 words; 4 reference file(s); 0 script(s); evals: yes. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: tables, checklists, examples. Digest
+    confirms intake, quality checklist, examples, references and evals for the sampled Skills."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: Ships evals per Skill plus templates and examples in references. The repository also contains internal
+  fixtures and maintenance tooling that are not Skills for users.
+rejectionReason: ""
+sources:
+  - url: https://github.com/product-on-purpose/pm-skills/tree/1cef1a9eae10017389863d51e289e0ae41e17fcb/skills/foundation-build-risk-review
+    note: Skill folder at the inspected commit
+  - url: https://github.com/product-on-purpose/pm-skills/blob/1cef1a9eae10017389863d51e289e0ae41e17fcb/README.md
+    note: Repository README at the inspected commit
+  - url: https://skills.cat/skills/product-on-purpose/pm-skills/skills-discover-interview-synthesis
+    note: Registry listing of a Skill from the repo

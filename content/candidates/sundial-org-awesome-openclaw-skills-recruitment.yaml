@@ -1,0 +1,74 @@
+id: sundial-org-awesome-openclaw-skills-recruitment
+name: Recruitment Automation
+summary: Searches the web for candidates and drafts outreach through a paid service.
+category: hiring
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/sundial-org/awesome-openclaw-skills/tree/b80cde2ef85241dd4fd54a1b934f5e22835f78ba/skills/recruitment
+repoUrl: https://github.com/sundial-org/awesome-openclaw-skills
+repoSubpath: skills/recruitment
+pinnedRef: b80cde2ef85241dd4fd54a1b934f5e22835f78ba
+inspectedAt: 2026-10-03
+creator:
+  name: sundial-org
+  url: https://github.com/sundial-org
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: No LICENSE file found in the repository or Skill folder
+  assessment: needs_review
+  notes: "No license grant found. Default copyright applies: linking is fine; copying or redistributing is not."
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: sundial-org/awesome-openclaw-skills README.md line 174 @ b80cde2 mentions it in a
+      compatibility/install context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: sundial-org/awesome-openclaw-skills README.md line 166 @ b80cde2 mentions it in a
+      compatibility/install context
+    note: ""
+founderRelevance: Aggregator collection.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 463
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - templates/code blocks
+      - examples
+  assessment: "463 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: templates/code blocks, examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: Promotes a paid vendor service and requires buying an API key; no license in the repository.
+sources:
+  - url: https://github.com/sundial-org/awesome-openclaw-skills/tree/b80cde2ef85241dd4fd54a1b934f5e22835f78ba/skills/recruitment
+    note: Skill folder at the inspected commit
+  - url: https://github.com/sundial-org/awesome-openclaw-skills/blob/b80cde2ef85241dd4fd54a1b934f5e22835f78ba/README.md
+    note: Repository README at the inspected commit
+  - url: https://claudeskills.info/skills/sundial-org/awesome-openclaw-skills/recruitment/
+    note: Registry listing of the recruitment Skill

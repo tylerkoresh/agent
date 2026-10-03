@@ -1,0 +1,65 @@
+id: caleblewallen-agent-prod-pm-research
+name: PM Research Synthesis
+summary: Synthesizes feedback, interviews and analytics into a shared context file
+category: customers
+tags:
+  - research
+  - feedback
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/CalebLewallen/agent-prod/tree/58321aa041cfad543f93b927d0bcbd4f1b2cade7/product-manager/skills/pm-research
+repoUrl: https://github.com/CalebLewallen/agent-prod
+repoSubpath: product-manager/skills/pm-research
+pinnedRef: 58321aa041cfad543f93b927d0bcbd4f1b2cade7
+inspectedAt: 2026-10-03
+creator:
+  name: CalebLewallen
+  url: https://github.com/CalebLewallen
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: No LICENSE file in the repository.
+  assessment: needs_review
+  notes: ""
+supportedAgents: []
+founderRelevance: Product-management research Skill.
+primaryUse: Synthesizes feedback, interviews and analytics into a shared context file
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 564
+    references: 1
+    scripts: 0
+    evals: false
+    structure:
+      - templates/code blocks
+  assessment: "564 words; 1 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: templates/code blocks."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: unknown
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: ""
+sources:
+  - url: https://github.com/CalebLewallen/agent-prod/tree/58321aa041cfad543f93b927d0bcbd4f1b2cade7/product-manager/skills/pm-research
+    note: Skill folder at the inspected commit
+  - url: https://github.com/CalebLewallen/agent-prod/blob/58321aa041cfad543f93b927d0bcbd4f1b2cade7/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/CalebLewallen/agent-prod
+    note: Repository

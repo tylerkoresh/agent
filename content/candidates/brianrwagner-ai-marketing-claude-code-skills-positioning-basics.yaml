@@ -1,0 +1,84 @@
+id: brianrwagner-ai-marketing-claude-code-skills-positioning-basics
+name: Positioning Basics
+summary: Helps founders define positioning and a value proposition
+category: marketing
+tags:
+  - positioning
+  - value-prop
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/BrianRWagner/ai-marketing-claude-code-skills/tree/f36b34fc539a7a3b801839bfff2c26277fd7ec69/positioning-basics
+repoUrl: https://github.com/BrianRWagner/ai-marketing-claude-code-skills
+repoSubpath: positioning-basics
+pinnedRef: f36b34fc539a7a3b801839bfff2c26277fd7ec69
+inspectedAt: 2026-10-03
+creator:
+  name: BrianRWagner
+  url: https://github.com/BrianRWagner
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: The README shows an MIT badge, but no LICENSE file exists in the repository.
+  assessment: needs_review
+  notes: A badge is not a license grant. Ask the author to add a LICENSE file before listing.
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: BrianRWagner/ai-marketing-claude-code-skills README.md line 3 @ f36b34f mentions it in a
+      compatibility/install context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: BrianRWagner/ai-marketing-claude-code-skills README.md line 242 @ f36b34f mentions it in a
+      compatibility/install context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: BrianRWagner/ai-marketing-claude-code-skills README.md line 10 @ f36b34f mentions it in a
+      compatibility/install context
+    note: ""
+founderRelevance: Marketing frameworks for founders and marketers (positioning, homepage audit, case studies).
+primaryUse: Helps founders define positioning and a value proposition
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1163
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - tables
+      - checklists
+      - templates/code blocks
+      - examples
+  assessment: "1163 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: tables, checklists, templates/code
+    blocks, examples. Descriptions and outlines reviewed; bodies not read in full."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: ""
+sources:
+  - url: https://github.com/BrianRWagner/ai-marketing-claude-code-skills/tree/f36b34fc539a7a3b801839bfff2c26277fd7ec69/positioning-basics
+    note: Skill folder at the inspected commit
+  - url: https://github.com/BrianRWagner/ai-marketing-claude-code-skills/blob/f36b34fc539a7a3b801839bfff2c26277fd7ec69/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/BrianRWagner/ai-marketing-claude-code-skills
+    note: Repository

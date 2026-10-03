@@ -1,0 +1,83 @@
+id: bhanunamikaze-agentic-seo-skill-root
+name: Agentic SEO (suite)
+summary: Runs SEO audits with specialist sub-skills for technical, content and schema checks
+category: seo
+tags:
+  - seo-suite
+status: researching
+shortlist: false
+sourceType: github_plugin_suite
+sourceUrl: https://github.com/Bhanunamikaze/Agentic-SEO-Skill/tree/69199160e18372bc5cdf9ddec20ccb9fb1b509f1
+repoUrl: https://github.com/Bhanunamikaze/Agentic-SEO-Skill
+repoSubpath: ""
+pinnedRef: 69199160e18372bc5cdf9ddec20ccb9fb1b509f1
+inspectedAt: 2026-10-03
+creator:
+  name: Bhanunamikaze
+  url: https://github.com/Bhanunamikaze
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 6919916
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: codex
+    evidence: declared
+    source: Bhanunamikaze/Agentic-SEO-Skill README.md line 189 @ 6919916 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: Bhanunamikaze/Agentic-SEO-Skill README.md line 198 @ 6919916 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: Bhanunamikaze/Agentic-SEO-Skill README.md line 195 @ 6919916 mentions it in a compatibility/install
+      context
+    note: ""
+founderRelevance: LLM-first SEO analysis suite for agent IDEs.
+primaryUse: Runs SEO audits with specialist sub-skills for technical, content and schema checks
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 2381
+    references: 0
+    scripts: 91
+    evals: false
+    structure:
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "2381 words; 0 reference file(s); 91 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: tables, templates/code blocks,
+    examples."
+specConformance: fail
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: unknown
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies:
+  - Python dependencies (requests, beautifulsoup4)
+overlapsWith: []
+notes: "Spec checks failed: nameMatchesDir."
+rejectionReason: ""
+sources:
+  - url: https://github.com/Bhanunamikaze/Agentic-SEO-Skill/tree/69199160e18372bc5cdf9ddec20ccb9fb1b509f1
+    note: Skill folder at the inspected commit
+  - url: https://github.com/Bhanunamikaze/Agentic-SEO-Skill/blob/69199160e18372bc5cdf9ddec20ccb9fb1b509f1/README.md
+    note: Repository README at the inspected commit
+  - url: https://www.sourcepulse.org/projects/27026296
+    note: Directory listing for the repo

@@ -1,0 +1,67 @@
+id: kkoppenhaver-cc-skills-tweet
+name: Tweet Writer
+summary: Writes tweets in the author's voice.
+category: content
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/kkoppenhaver/cc-skills/tree/8b1aa7e1f2070cc17101c1176c6a6fa6d22d1c5c/tweet
+repoUrl: https://github.com/kkoppenhaver/cc-skills
+repoSubpath: tweet
+pinnedRef: 8b1aa7e1f2070cc17101c1176c6a6fa6d22d1c5c
+inspectedAt: 2026-10-03
+creator:
+  name: kkoppenhaver
+  url: https://github.com/kkoppenhaver
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: No root LICENSE file; two Skills reference a LICENSE.txt.
+  assessment: needs_review
+  notes: ""
+supportedAgents: []
+founderRelevance: A marketer's personal Claude Code Skills.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 706
+    references: 1
+    scripts: 1
+    evals: false
+    structure:
+      - shared-context file
+      - checklists
+      - templates/code blocks
+      - examples
+  assessment: "706 words; 1 reference file(s); 1 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: shared-context file, checklists,
+    templates/code blocks, examples."
+specConformance: pass
+gates:
+  useful: no
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: unknown
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: Hard-coded to one person's voice ("in Keanan's voice"); not reusable.
+sources:
+  - url: https://github.com/kkoppenhaver/cc-skills/tree/8b1aa7e1f2070cc17101c1176c6a6fa6d22d1c5c/tweet
+    note: Skill folder at the inspected commit
+  - url: https://github.com/kkoppenhaver/cc-skills/blob/8b1aa7e1f2070cc17101c1176c6a6fa6d22d1c5c/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/kkoppenhaver/cc-skills
+    note: Repository

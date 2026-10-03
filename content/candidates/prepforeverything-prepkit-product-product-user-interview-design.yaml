@@ -1,0 +1,67 @@
+id: prepforeverything-prepkit-product-product-user-interview-design
+name: Interview Design
+summary: Designs a qualitative research package with screener, guide and synthesis plan
+category: customers
+tags:
+  - interviews
+  - screener
+status: researching
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/prepforeverything/prepkit-product/tree/3b1e2b13267cd4e9d1b21ed900d261952e56dc4d/skills/product-user-interview-design
+repoUrl: https://github.com/prepforeverything/prepkit-product
+repoSubpath: skills/product-user-interview-design
+pinnedRef: 3b1e2b13267cd4e9d1b21ed900d261952e56dc4d
+inspectedAt: 2026-10-03
+creator:
+  name: prepforeverything
+  url: https://github.com/prepforeverything
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 3b1e2b1
+  assessment: ok_to_link
+  notes: ""
+supportedAgents: []
+founderRelevance: Product discovery and PRD Skills packaged as a Claude Code plugin.
+primaryUse: Designs a qualitative research package with screener, guide and synthesis plan
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 920
+    references: 5
+    scripts: 0
+    evals: false
+    structure:
+      - intake step
+      - tables
+      - checklists
+  assessment: "920 words; 5 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: intake step, tables, checklists."
+specConformance: fail
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: no
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: unknown
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: "Spec checks failed: frontmatterParses, nameValid, nameMatchesDir, descriptionPresent."
+rejectionReason: ""
+sources:
+  - url: https://github.com/prepforeverything/prepkit-product/tree/3b1e2b13267cd4e9d1b21ed900d261952e56dc4d/skills/product-user-interview-design
+    note: Skill folder at the inspected commit
+  - url: https://github.com/prepforeverything/prepkit-product/blob/3b1e2b13267cd4e9d1b21ed900d261952e56dc4d/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/prepforeverything/prepkit-product
+    note: Repository

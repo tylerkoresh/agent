@@ -1,0 +1,68 @@
+id: kkoppenhaver-cc-skills-fact-check
+name: Article Fact-Check
+summary: Extracts verifiable claims from a published article and checks them against research
+category: content
+tags:
+  - fact-check
+  - editing
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/kkoppenhaver/cc-skills/tree/8b1aa7e1f2070cc17101c1176c6a6fa6d22d1c5c/fact-check
+repoUrl: https://github.com/kkoppenhaver/cc-skills
+repoSubpath: fact-check
+pinnedRef: 8b1aa7e1f2070cc17101c1176c6a6fa6d22d1c5c
+inspectedAt: 2026-10-03
+creator:
+  name: kkoppenhaver
+  url: https://github.com/kkoppenhaver
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: No root LICENSE file; two Skills reference a LICENSE.txt.
+  assessment: needs_review
+  notes: ""
+supportedAgents: []
+founderRelevance: A marketer's personal Claude Code Skills.
+primaryUse: Extracts verifiable claims from a published article and checks them against research
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 811
+    references: 2
+    scripts: 0
+    evals: false
+    structure:
+      - intake step
+      - templates/code blocks
+      - examples
+  assessment: "811 words; 2 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: intake step, templates/code blocks,
+    examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: unknown
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: ""
+sources:
+  - url: https://github.com/kkoppenhaver/cc-skills/tree/8b1aa7e1f2070cc17101c1176c6a6fa6d22d1c5c/fact-check
+    note: Skill folder at the inspected commit
+  - url: https://github.com/kkoppenhaver/cc-skills/blob/8b1aa7e1f2070cc17101c1176c6a6fa6d22d1c5c/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/kkoppenhaver/cc-skills
+    note: Repository

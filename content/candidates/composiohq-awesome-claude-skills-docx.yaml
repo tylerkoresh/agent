@@ -1,0 +1,90 @@
+id: composiohq-awesome-claude-skills-docx
+name: Word Documents (copy)
+summary: Copy of the Anthropic docx Skill.
+category: operations
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/document-skills/docx
+repoUrl: https://github.com/ComposioHQ/awesome-claude-skills
+repoSubpath: document-skills/docx
+pinnedRef: be2a406907dbc61b73e6827ded415c96139d13a2
+inspectedAt: 2026-10-03
+creator:
+  name: ComposioHQ
+  url: https://github.com/ComposioHQ
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: proprietary/restrictive (read the file)
+  evidence: LICENSE.txt in the Skill folder (proprietary/restrictive (read the file))
+  assessment: needs_review
+  notes: The Skill folder has its own license that is not a standard permissive license. Read it before listing.
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: ComposioHQ/awesome-claude-skills README.md line 101 @ be2a406 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: ComposioHQ/awesome-claude-skills README.md line 101 @ be2a406 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: ComposioHQ/awesome-claude-skills README.md line 101 @ be2a406 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: gemini-cli
+    evidence: declared
+    source: ComposioHQ/awesome-claude-skills README.md line 101 @ be2a406 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: ComposioHQ/awesome-claude-skills README.md line 135 @ be2a406 mentions it in a compatibility/install
+      context
+    note: ""
+founderRelevance: Aggregator that includes copies of other publishers' Skills.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 1343
+    references: 0
+    scripts: 4
+    evals: false
+    structure:
+      - templates/code blocks
+      - examples
+  assessment: "1343 words; 0 reference file(s); 4 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: templates/code blocks, examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: A copy of Anthropic's docx Skill, which carries a proprietary license, inside a repository
+  that has no license of its own. Use the original source.
+sources:
+  - url: https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907dbc61b73e6827ded415c96139d13a2/document-skills/docx
+    note: Skill folder at the inspected commit
+  - url: https://github.com/ComposioHQ/awesome-claude-skills/blob/be2a406907dbc61b73e6827ded415c96139d13a2/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/InternScience/Awesome-Scientific-Skills
+    note: Awesome list citing the collection

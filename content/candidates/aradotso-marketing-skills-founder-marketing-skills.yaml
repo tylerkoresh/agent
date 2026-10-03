@@ -1,0 +1,75 @@
+id: aradotso-marketing-skills-founder-marketing-skills
+name: Founder Marketing Skills
+summary: Auto-generated Skill from a trending marketing repository.
+category: marketing
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/aradotso/marketing-skills/tree/97301f4188a7152bed5a121cbd4763ba9ac21afe/skills/founder-marketing-skills
+repoUrl: https://github.com/aradotso/marketing-skills
+repoSubpath: skills/founder-marketing-skills
+pinnedRef: 97301f4188a7152bed5a121cbd4763ba9ac21afe
+inspectedAt: 2026-10-03
+creator:
+  name: aradotso
+  url: https://github.com/aradotso
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: "LICENSE: unrecognized"
+  assessment: needs_review
+  notes: "No license grant found. Default copyright applies: linking is fine; copying or redistributing is not."
+supportedAgents:
+  - agent: codex
+    evidence: declared
+    source: aradotso/marketing-skills README.md line 71 @ 97301f4 mentions it in a compatibility/install context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: aradotso/marketing-skills README.md line 30 @ 97301f4 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Bot-generated collection.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 1513
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "1513 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: tables, templates/code blocks,
+    examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: no
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: The repository README says a bot writes a Skill for each trending repo, and the README still
+  contains an unfilled template placeholder. Skills are auto-generated, not curated.
+sources:
+  - url: https://github.com/aradotso/marketing-skills/tree/97301f4188a7152bed5a121cbd4763ba9ac21afe/skills/founder-marketing-skills
+    note: Skill folder at the inspected commit
+  - url: https://github.com/aradotso/marketing-skills/blob/97301f4188a7152bed5a121cbd4763ba9ac21afe/README.md
+    note: Repository README at the inspected commit
+  - url: https://vibeindex.ai/collection/aradotso/marketing-skills
+    note: Directory page describing the bot-generated collection

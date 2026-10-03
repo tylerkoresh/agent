@@ -1,0 +1,78 @@
+id: obra-superpowers-writing-plans
+name: Writing Plans
+summary: Writes an implementation plan before coding
+category: development
+tags:
+  - planning
+status: researching
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/writing-plans
+repoUrl: https://github.com/obra/superpowers
+repoSubpath: skills/writing-plans
+pinnedRef: 8ca22dba9a94f28898bbce59f2537ff4d87c747d
+inspectedAt: 2026-10-03
+creator:
+  name: obra
+  url: https://github.com/obra
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 8ca22db
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: obra/superpowers README.md line 254 @ 8ca22db mentions it in a compatibility/install context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: obra/superpowers README.md line 123 @ 8ca22db mentions it in a compatibility/install context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: obra/superpowers README.md line 184 @ 8ca22db mentions it in a compatibility/install context
+    note: ""
+founderRelevance: A general AI-coding workflow; useful to founders who build with an AI agent, though not founder-specific.
+primaryUse: Writes an implementation plan before coding
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1619
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - checklists
+      - templates/code blocks
+  assessment: "1619 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: checklists, templates/code blocks.
+    Descriptions and outlines reviewed."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: ""
+sources:
+  - url: https://github.com/obra/superpowers/tree/8ca22dba9a94f28898bbce59f2537ff4d87c747d/skills/writing-plans
+    note: Skill folder at the inspected commit
+  - url: https://github.com/obra/superpowers/blob/8ca22dba9a94f28898bbce59f2537ff4d87c747d/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/obra/superpowers
+    note: Repository

@@ -1,0 +1,94 @@
+id: whawkinsiv-solo-founder-superpowers-brand-identity
+name: Brand Identity
+summary: Creates a visual brand identity
+category: design
+tags:
+  - brand
+status: researching
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/whawkinsiv/solo-founder-superpowers/tree/b38729339fb857f3f6c8838003517a5a1b295570/plugins/sf-design/skills/brand-identity-generator
+repoUrl: https://github.com/whawkinsiv/solo-founder-superpowers
+repoSubpath: plugins/sf-design/skills/brand-identity-generator
+pinnedRef: b38729339fb857f3f6c8838003517a5a1b295570
+inspectedAt: 2026-10-03
+creator:
+  name: whawkinsiv
+  url: https://github.com/whawkinsiv
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ b387293
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: whawkinsiv/solo-founder-superpowers README.md line 9 @ b387293 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: whawkinsiv/solo-founder-superpowers README.md line 9 @ b387293 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: whawkinsiv/solo-founder-superpowers README.md line 9 @ b387293 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: gemini-cli
+    evidence: declared
+    source: whawkinsiv/solo-founder-superpowers README.md line 9 @ b387293 mentions it in a compatibility/install
+      context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: whawkinsiv/solo-founder-superpowers README.md line 9 @ b387293 mentions it in a compatibility/install
+      context
+    note: ""
+founderRelevance: Written for solo founders building SaaS products with AI coding tools (README).
+primaryUse: Creates a visual brand identity
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1387
+    references: 1
+    scripts: 0
+    evals: false
+    structure:
+      - tables
+      - checklists
+      - examples
+  assessment: "1387 words; 1 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: tables, checklists, examples. Only
+    pricing was read in full; others judged from outline. Closer to checklist-plus-prompt than the
+    evals-backed sources."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: The identical 62 Skills also appear under the older repository name whawkinsiv/claude-code-skills; this
+  is one source. Many Skills use copy-paste "Tell AI:" prompt blocks around a checklist.
+rejectionReason: ""
+sources:
+  - url: https://github.com/whawkinsiv/solo-founder-superpowers/tree/b38729339fb857f3f6c8838003517a5a1b295570/plugins/sf-design/skills/brand-identity-generator
+    note: Skill folder at the inspected commit
+  - url: https://github.com/whawkinsiv/solo-founder-superpowers/blob/b38729339fb857f3f6c8838003517a5a1b295570/README.md
+    note: Repository README at the inspected commit
+  - url: https://claudeskills.info/skills/whawkinsiv/solo-founder-superpowers/finances/
+    note: Directory listing for a Skill from the repo

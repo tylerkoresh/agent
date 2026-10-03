@@ -1,0 +1,60 @@
+id: founder-institute-ai-skills-undefined-fi
+name: Founder Institute AI Skills (7 guided Skills)
+summary: Guided founder Skills for validating an idea, building a pitch deck, planning a launch, sharpening
+  copy and synthesizing customer interviews
+category: fundraising
+tags:
+  - pitch-deck
+  - validation
+  - founder-story
+status: discovered
+shortlist: false
+sourceType: website
+sourceUrl: https://fi.co/aiskills
+repoUrl: ""
+repoSubpath: ""
+pinnedRef: ""
+creator:
+  name: Founder Institute
+  url: https://fi.co
+  basis: Published on the organization's own website.
+license:
+  spdx: unknown
+  evidence: The page footer says "All Rights Reserved"; no license for the Skills was found.
+  assessment: unknown
+  notes: Skills are gated behind registration and distributed as downloads. Rights are unclear. A link to the
+    page is fine; nothing may be copied.
+supportedAgents: []
+founderRelevance: "Seven guided founder Skills: idea validation, pitch deck, launch plan, copy, customer
+  knowledge, interview synthesis and founder story."
+primaryUse: Guided founder Skills for validating an idea, building a pitch deck, planning a launch, sharpening
+  copy and synthesizing customer interviews
+quality:
+  verdict: unknown
+  basis: metadata_only
+  signals: {}
+  assessment: "Not inspected: the Skills are behind a registration wall and only one preview link was visible."
+specConformance: unchecked
+gates:
+  useful: unknown
+  specificJob: unknown
+  clearDescription: unknown
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: unknown
+  testable: unknown
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: Could not verify content, format or compatibility. Only the page description was read.
+rejectionReason: ""
+sources:
+  - url: https://fi.co/aiskills
+    note: Public landing page (inspected 2026-10-03)
+  - url: https://www.thevccorner.com/p/claude-skills-every-founder-should-steal
+    note: Roundup that surfaced this ecosystem

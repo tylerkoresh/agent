@@ -1,0 +1,78 @@
+id: anthropics-knowledge-work-plugins-design-critique
+name: Design Critique
+summary: Gives structured feedback on usability, hierarchy and consistency
+category: design
+tags:
+  - ux
+  - review
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/anthropics/knowledge-work-plugins/tree/8444efcd48f7012f09797778a36a33e73d0861f4/design/skills/design-critique
+repoUrl: https://github.com/anthropics/knowledge-work-plugins
+repoSubpath: design/skills/design-critique
+pinnedRef: 8444efcd48f7012f09797778a36a33e73d0861f4
+inspectedAt: 2026-10-03
+creator:
+  name: anthropics
+  url: https://github.com/anthropics
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: Apache-2.0
+  evidence: LICENSE at repository root (detected Apache-2.0) @ 8444efc
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: anthropics/knowledge-work-plugins README.md line 3 @ 8444efc mentions it in a compatibility/install
+      context
+    note: ""
+founderRelevance: Official Anthropic role plugins (marketing, product, sales, small business, data) that a
+  founder can use as a stand-in for missing functions.
+primaryUse: Gives structured feedback on usability, hierarchy and consistency
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 542
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - intake step
+      - tables
+      - templates/code blocks
+  assessment: "542 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: intake step, tables, templates/code
+    blocks. Descriptions and outlines reviewed; bodies not read in full."
+specConformance: pass
+gates:
+  useful: no
+  specificJob: no
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: unknown
+  beatsGenericModel: no
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies:
+  - Best results need connected tools (the Skills refer to CRM, email, calendar or accounting connectors via
+    ~~ placeholders)
+overlapsWith: []
+notes: Built for Claude Cowork and also compatible with Claude Code per the README. Skills use ~~placeholders
+  for optional connected tools (CRM, email, calendar, ledger).
+rejectionReason: "Auto-culled: under 700 words with no references, scripts or evals; added value over a
+  general model unproven."
+sources:
+  - url: https://github.com/anthropics/knowledge-work-plugins/tree/8444efcd48f7012f09797778a36a33e73d0861f4/design/skills/design-critique
+    note: Skill folder at the inspected commit
+  - url: https://github.com/anthropics/knowledge-work-plugins/blob/8444efcd48f7012f09797778a36a33e73d0861f4/README.md
+    note: Repository README at the inspected commit
+  - url: https://skillselion.com/skills/anthropics/knowledge-work-plugins/synthesize-research
+    note: Registry listing of a Skill from the repo

@@ -1,0 +1,72 @@
+id: justinedevs-collection-startup
+name: Startup Founder Bundle
+summary: Bundles founder Skills behind one entry point.
+category: operations
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/justinedevs/collection/tree/126c72404f79f55bd2311f6742844704d9e9d603/startup
+repoUrl: https://github.com/justinedevs/collection
+repoSubpath: startup
+pinnedRef: 126c72404f79f55bd2311f6742844704d9e9d603
+inspectedAt: 2026-10-03
+creator:
+  name: justinedevs
+  url: https://github.com/justinedevs
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 126c724
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: codex
+    evidence: declared
+    source: justinedevs/collection README.md line 7 @ 126c724 mentions it in a compatibility/install context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: justinedevs/collection README.md line 53 @ 126c724 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: A "founder operating system" bundle.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 94
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - templates/code blocks
+  assessment: "94 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: templates/code blocks."
+specConformance: pass
+gates:
+  useful: no
+  specificJob: no
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: no
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: An umbrella bundle that routes to many thin sub-skills (median about 400 words); the
+  "operating system" framing is exactly the concept we are avoiding.
+sources:
+  - url: https://github.com/justinedevs/collection/tree/126c72404f79f55bd2311f6742844704d9e9d603/startup
+    note: Skill folder at the inspected commit
+  - url: https://github.com/justinedevs/collection/blob/126c72404f79f55bd2311f6742844704d9e9d603/README.md
+    note: Repository README at the inspected commit
+  - url: https://skills.sh/justinedevs/collection/startup
+    note: Registry listing of the bundle

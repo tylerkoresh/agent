@@ -1,0 +1,562 @@
+# Curation decisions. Format:
+#   (header) owner/repo            repo block; "@ key = value" lines are repo-level (fit, notes, qnote, deps, disc, spdx, assessment, licenseNotes, licenseEvidence, agentsExclude, kind)
+#   - path | Display name | category | verdict | status | flags(S=shortlist,B=body read) | tags | what it does (our words)
+#   x path | Display name | category | [code] rejection reason          (codes: generic offtopic filler license duplicate nodesc provenance vendor)
+#   + key = value            extra for previous entry (why, q, note, deps, overlaps, what)
+# Facts (commit, license files, README agent mentions, sizes, evals) come from the scanner, never from this file.
+
+## coreyhaines31/marketingskills
+@ fit = The repository README says it is built for technical marketers and founders.
+@ notes = Every Skill ships an evals.json with test prompts and expected assertions; Skills read an optional shared product-marketing context file.
+@ qnote = Structure checked on a sample via digest: intake step, shared-context file, references, evals. Only pricing was read in full.
+@ disc = https://www.sourcepulse.org/projects/22945338 ~ Directory listing describing the repo
+- product-marketing | Product Marketing Context | marketing | strong | testing | S | positioning,context | Builds the shared product, audience and positioning document that the other marketing Skills read first
+- copywriting | Marketing Copywriting | marketing | strong | testing | S | copy,landing-page | Writes or rewrites page copy after an intake on product, audience and goal, with principles and CTA guidance
+- copy-editing | Copy Editing | content | strong | testing | S | editing,copy | Reviews and tightens existing marketing copy and refreshes outdated content
+- pricing | Pricing Strategy | finance | strong | testing | S,B | pricing,saas,monetization | Designs SaaS packaging, pricing metric and price points from a structured intake, with reference docs on models, tiers and research methods
+- launch | Product Launch Plan | marketing | strong | testing | S | launch,product-hunt | Plans a launch with a readiness gate, a five-phase approach and a launch checklist
+- cold-email | Cold Email and Follow-ups | sales | strong | testing | S | outbound,email | Writes B2B cold emails and follow-up sequences with reference material
+  + overlaps = thecraighewitt-sales-skills-cold-email
+- content-strategy | Content Strategy | content | strong | testing | S | strategy,topics | Decides what content to create and why, from audience and goals
+- seo-audit | SEO Audit | seo | strong | testing | S | audit,technical-seo | Diagnoses on-page, technical and content SEO issues on a site with a prioritised framework
+- ai-seo | AI Search Optimization | seo | strong | testing | S | geo,aeo,llm | Optimizes content to be cited by AI search engines and LLM answers
+- competitor-profiling | Competitor Profiling | research | strong | testing | S | competitors,research | Profiles competitors from their URLs
+- customer-research | Customer Research | customers | strong | testing | S | interviews,research | Plans, analyzes and synthesizes customer research across existing data, communities and interviews
+- churn-prevention | Churn Prevention | customers | strong | testing | S | retention,cancel-flow | Designs cancellation flows, save offers and failed-payment recovery
+- prospecting | Prospect Research | sales | strong | testing | S | leads,prospecting | Finds, qualifies and lists prospects to reach out to
+- marketing-plan | Marketing Plan | marketing | strong | testing | S | planning | Produces a full marketing plan for a company or client
+- emails | Email Sequences | marketing | strong | testing | S | email,lifecycle | Designs email sequences, drips and lifecycle flows
+- signup | Signup Flow Optimization | growth | strong | testing | S | signup,activation | Optimizes signup, registration and trial activation flows
+- attribution | Marketing Attribution | analytics | strong | researching | | attribution,measurement | Works out which marketing actually drives conversions and revenue and how to measure it
+- analytics | Analytics Tracking Setup | analytics | adequate | testing | S | tracking,events | Sets up, improves or audits analytics tracking and measurement
+- cro | Page Conversion Optimization | growth | adequate | researching | | cro,landing-page | Reviews a marketing page or form to raise conversion
+- onboarding | Onboarding and Activation | product | adequate | researching | | onboarding,activation | Improves post-signup onboarding and time-to-value
+- lead-magnets | Lead Magnets | marketing | adequate | researching | | lead-gen | Plans and optimizes lead magnets for email capture
+- programmatic-seo | Programmatic SEO | seo | adequate | researching | | seo,templates | Plans SEO pages generated at scale from templates and data
+- schema | Schema Markup | seo | adequate | researching | | schema,structured-data | Adds, fixes and validates structured data markup
+- site-architecture | Site Architecture | seo | adequate | researching | | information-architecture | Plans page hierarchy, navigation and URL structure
+- competitors | Competitor Comparison Pages | seo | adequate | researching | | alternatives,vs-pages | Creates competitor comparison and alternative pages
+  + overlaps = agricidaniel-claude-seo-seo
+- ab-testing | A/B Test Design | growth | adequate | researching | | experiments | Plans and designs A/B tests and growth experiments
+- referrals | Referral Programs | growth | adequate | researching | | referral,affiliate | Creates and analyzes referral and affiliate programs
+- community-marketing | Community Marketing | growth | adequate | researching | | community | Builds online communities that drive product growth
+- public-relations | Public Relations | marketing | adequate | researching | | pr,press | Plans earned media and journalist outreach
+- free-tools | Free Tool Strategy | growth | adequate | researching | | lead-gen,seo | Plans free tools for lead generation and SEO
+- directory-submissions | Directory Submissions | growth | adequate | researching | | launch,directories | Plans submissions to startup, SaaS and AI directories
+- ads | Paid Advertising | marketing | strong | researching | | ppc,google-ads,meta-ads | Plans and optimizes paid campaigns on major ad platforms
+- sales-enablement | Sales Enablement | sales | adequate | researching | | collateral,decks | Creates pitch decks, one-pagers and objection-handling docs
+- offers | Offer Design | marketing | adequate | researching | | offer,packaging | Designs and improves the offer a company actually sells
+x marketing-ideas | Marketing Ideas | marketing | [generic] A list of marketing ideas by category in about 760 words; a capable general model produces equivalent ideas on request.
+x marketing-psychology | Marketing Psychology | marketing | [generic] Summarizes well-known behavioral models with no intake or output structure; little beyond what a general model already knows.
+x popups | Popups and Banners | growth | [duplicate] Overlaps the page-conversion Skill and has no references.
+x video | AI Video Production | marketing | [offtopic] Depends on external AI video tooling; media production, not a founder-core job.
+  + what = Produces video content using AI tools or code frameworks.
+x image | Marketing Image Generation | marketing | [offtopic] Depends on external image-generation tooling; not a founder-core job.
+  + what = Generates and edits marketing images.
+
+## TheCraigHewitt/sales-skills
+@ fit = Covers founder-relevant B2B selling (outreach, discovery, objections, proposals); the README positions it for sales professionals and revenue leaders, so some Skills assume a sales team.
+@ notes = Uses the same shared-context convention as marketingskills (.agents/sales-context.md). No attribution to marketingskills was found, and derivation was not established.
+@ qnote = Structure checked via digest for cold-email, outbound-sequence and objection-handling; discovery-call was read in part.
+@ disc = https://tomevault.io/tome/TheCraigHewitt/sales-skills ~ Directory listing for the repo
+- discovery-call | Discovery Call Planner | sales | strong | testing | S,B | discovery,qualification | Plans a discovery call and builds qualification questions, with a diagnose-not-pitch method
+- outbound-sequence | Outbound Sequence Designer | sales | strong | testing | S | outbound,cadence | Designs multi-channel outbound cadences with capacity math and benchmarks
+- objection-handling | Objection Handling | sales | strong | testing | S | objections | Prepares objection playbooks using a structured response framework
+- cold-email | Cold Outbound Email | sales | strong | testing | | outbound,email | Writes cold outbound email and follow-ups with deliverability guidance
+  + overlaps = coreyhaines31-marketingskills-cold-email
+- lead-research | Account and Lead Research | sales | adequate | researching | | research,leads | Researches accounts and contacts to build target lists
+- linkedin-outreach | LinkedIn Outreach | sales | adequate | researching | | linkedin,social-selling | Writes LinkedIn connection requests and DM sequences
+- call-debrief | Sales Call Debrief | sales | adequate | researching | | calls,transcripts | Turns a call transcript into takeaways and next steps
+- competitive-intel | Sales Battle Cards | sales | adequate | researching | | battlecards,competitors | Builds competitive battle cards and positioning statements
+- demo-script | Demo Script | sales | adequate | researching | | demo | Builds a tailored product demo script
+- negotiation | Deal Negotiation Prep | sales | adequate | researching | | negotiation | Prepares concessions and deal structure
+- proposal-pricing | Proposal and Pricing | sales | adequate | researching | | proposals,sow | Structures proposals, pricing and SOWs
+- win-loss-analysis | Win/Loss Analysis | sales | adequate | researching | | win-loss | Finds patterns across closed deals
+- buyer-persona | Buyer Personas | customers | adequate | researching | | persona,icp | Builds buyer personas and buying-committee maps
+x sales-comp | Sales Compensation Plans | sales | [offtopic] Designs quotas and accelerators for a sales team; not a founder-stage job.
+  + what = Designs sales compensation plans and quotas.
+x direct-mail | Direct Mail Campaigns | sales | [offtopic] Physical mail campaigns; niche for early-stage founders.
+  + what = Plans physical direct-mail campaigns.
+
+## whawkinsiv/solo-founder-superpowers
+@ fit = Written for solo founders building SaaS products with AI coding tools (README).
+@ notes = The identical 62 Skills also appear under the older repository name whawkinsiv/claude-code-skills; this is one source. Many Skills use copy-paste "Tell AI:" prompt blocks around a checklist.
+@ qnote = Only pricing was read in full; others judged from outline. Closer to checklist-plus-prompt than the evals-backed sources.
+@ disc = https://claudeskills.info/skills/whawkinsiv/solo-founder-superpowers/finances/ ~ Directory listing for a Skill from the repo
+- validate | Business Idea Validation | research | adequate | testing | S | validation,demand | Validates a business idea and tests demand before building
+- market-research | Market Research | research | adequate | researching | | tam,competitors | Sizes a market and analyzes competitors
+- customer-research | Customer Understanding | customers | adequate | researching | | personas,interviews | Builds personas and plans user interviews
+- hiring | Hiring Developers and Contractors | hiring | adequate | testing | S | hiring,contractors | Finds and vets developers and technical contractors
+- finance | SaaS Finance and Metrics | finance | adequate | researching | | unit-economics,runway | Builds a financial model and unit economics for a SaaS
+  + overlaps = wshobson-agents-startup-financial-modeling
+- account | Bookkeeping and Taxes | finance | adequate | researching | | bookkeeping,tax | Sets up bookkeeping, tracks revenue and expenses, prepares for tax
+- legal | Business Formation and Legal Basics | operations | adequate | researching | | legal,entity | Covers entity choice and standard legal documents; informational, not legal advice
+- payment | Payments and Billing Setup | development | adequate | researching | | stripe,billing | Sets up Stripe subscriptions and billing
+- prioritize | Feature Prioritization and MVP | product | adequate | researching | | mvp,roadmap | Prioritizes features and defines an MVP
+- is-this | Idea Form Decision | product | adequate | researching | | idea,scoping | Decides what form a new product idea should take before building
+- plan | Idea to Buildable Spec | product | adequate | researching | | spec,scope | Turns an idea into a buildable spec and scope
+- content | Build-in-Public Content Strategy | content | adequate | researching | | content,audience | Chooses content strategy for building an audience as a founder
+- humanize | Remove AI Writing Patterns | content | adequate | researching | | writing,editing | Removes AI-generated patterns from text
+- prose-writing | Long-form Founder Writing | content | adequate | researching | | writing,essays | Writes long-form posts and founder essays
+- feedback | Customer Feedback Collection | customers | adequate | researching | | feedback,nps | Collects user feedback and runs surveys
+- support | Customer Support Setup | customers | adequate | researching | | support,docs | Builds help docs and self-serve support
+- sales | First Customers and Outreach | sales | adequate | researching | | first-customers,outreach | Finds the first customers and writes outreach
+- growth | Product-Led Growth | growth | adequate | researching | | plg,activation | Designs a product-led growth strategy
+- brand-identity | Brand Identity | design | adequate | researching | | brand | Creates a visual brand identity
+- ux-design | UX Flow Design | design | adequate | researching | | ux,flows | Plans navigation and flows for clunky experiences
+- design-review | Design Audit | design | adequate | researching | | audit,ui | Audits a design against references
+- seo | SEO Plan and Keyword Research | seo | adequate | researching | | keywords,content-calendar | Plans SEO content and keyword research
+- technical-seo | Technical SEO in Code | seo | adequate | researching | | technical-seo,code | Implements meta tags, schema and Core Web Vitals in code
+- analytics | Product Analytics and Event Tracking | analytics | adequate | researching | | events,metrics | Designs event tracking and key metrics
+  + overlaps = coreyhaines31-marketingskills-analytics
+- go-live | Pre-Launch Checklist | development | adequate | researching | | launch,checklist | Runs a pre-launch readiness check
+- compliance | Compliance for Regulated Industries | operations | adequate | researching | | compliance | Explains compliance needs for regulated-industry software
+x pricing | Pricing and Monetization | finance | [duplicate] Covers the same job as the marketingskills pricing Skill, which is longer, ships references and evals.
+  + overlaps = coreyhaines31-marketingskills-pricing
+  + what = Sets pricing tiers and value metrics.
+x launch | Product Launch | marketing | [duplicate] Same job as marketingskills launch, which has a readiness gate and evals.
+  + what = Plans a launch and Product Hunt preparation.
+x copywriting | Copywriting | content | [duplicate] Same job as marketingskills copywriting, which has an intake step, references and evals.
+  + what = Writes headlines, CTAs and UX copy.
+x journey | Founder Journey | operations | [generic] Tells a new founder where to start; a general model answers this directly.
+  + what = Advises where to start for new founders.
+x next | What Should I Work On | operations | [generic] Open-ended "what should I do next" coaching with no distinct deliverable.
+  + what = Suggests what to work on next.
+x skill-audit | Skill Audit | development | [offtopic] Measures and fixes Claude Code Skills; for skill authors, not founders.
+  + what = Audits whether an existing Skill works.
+
+## refoundai/lenny-skills
+@ fit = Distilled founder and product guidance (fundraising, ICP, first customers, pricing, PMF) from the archive of Lenny's Podcast and Newsletter, per the README.
+@ spdx = MIT
+@ assessment = needs_review
+@ licenseEvidence = LICENSE at repository root (MIT). README says the Skills are distilled from Lenny's Podcast and Newsletter, with quotes checked against source transcripts.
+@ licenseNotes = The MIT license covers this repository's own text. It cannot grant rights over the underlying podcast and newsletter material or its verbatim quotes. Confirm the repository's right to share it before listing.
+@ notes = Each Skill cites source episodes; structure is a short guide plus references.
+@ qnote = Descriptions and outlines reviewed. Bodies not read in full.
+@ disc = https://claudskills.com/skills/fundraising-refoundai-lenny-skills/ ~ Registry listing of the fundraising Skill
+- fundraising | Fundraising Process | fundraising | adequate | license_review | | fundraising,raise | Guides the end-to-end funding process from bootstrapping versus raising to closing
+- evaluating-startup-ideas | Evaluating Startup Ideas | research | adequate | license_review | | validation,ideas | Separates tarpit ideas from promising ones using structured criteria
+- first-b2b-customers | First B2B Customers | sales | adequate | license_review | | first-customers | Guides the manual, unscalable path to the first B2B customers
+- founder-sales | Founder-Led Sales | sales | adequate | license_review | | founder-sales | Helps founders move from building to selling
+- enterprise-sales-motion | Enterprise Sales Motion | sales | adequate | license_review | | enterprise | Builds founder-led enterprise discovery and sales
+- defining-icp | Defining Your ICP | customers | adequate | license_review | | icp | Defines a hyper-specific ideal customer profile
+- positioning | Positioning | marketing | adequate | license_review | | positioning | Defines the competitive alternatives and positioning for a product
+- pricing-strategy | Pricing Strategy | finance | adequate | license_review | | pricing,wtp | Validates willingness to pay and picks value metrics
+- measuring-pmf | Measuring Product-Market Fit | product | adequate | license_review | | pmf | Assesses where a product sits on the PMF spectrum
+- idea-validation | Idea Validation | research | adequate | license_review | | validation | De-risks new bets by testing assumptions with cheap prototypes
+- naming-and-branding | Naming and Branding | marketing | adequate | license_review | | naming,brand | Creates memorable names and brand identity
+- plg-fundamentals | PLG Fundamentals | growth | adequate | license_review | | plg | Moves from sales-led to product-led growth
+- growth-model | Loop-Based Growth Model | growth | adequate | license_review | | growth-loops | Replaces funnel thinking with loop-based growth modeling
+- acquisition-channels | Acquisition Channels | growth | adequate | license_review | | channels | Finds distribution advantages and manages the channel lifecycle
+- customer-interviews | Customer Interviews | customers | adequate | license_review | | interviews | Runs customer interviews that go beyond feature requests
+- launch-planning | Launch Planning | marketing | adequate | license_review | | launch | Plans and coordinates a product launch
+- north-star-metrics | North Star Metrics | analytics | adequate | license_review | | metrics | Defines and operationalizes a North Star metric
+- marketplace-fundamentals | Marketplace Fundamentals | product | adequate | license_review | | marketplace | Covers cold start, liquidity and take rates for marketplaces
+- founding-exec-team | Founding and Exec Team | hiring | adequate | license_review | | cofounders,exec-hiring | Recruits cofounders and sequences early leadership hires
+- pr-and-press | PR and Press Strategy | marketing | adequate | license_review | | pr | Designs a press strategy tied to business goals
+- seo-strategy | SEO Strategy | seo | adequate | license_review | | seo | Designs a modern SEO strategy balancing technical and programmatic work
+x career-transitions | Career Transitions | operations | [offtopic] Personal career guidance, not a founder job.
+  + what = Helps evaluate career moves.
+x breaking-into-product | Breaking into Product | operations | [offtopic] Career advice for aspiring product managers.
+  + what = Advises how to enter product management.
+
+## product-on-purpose/pm-skills
+@ fit = Product-management Skills (discovery, definition, delivery, measurement) usable by a founder acting as product lead.
+@ notes = Ships evals per Skill plus templates and examples in references. The repository also contains internal fixtures and maintenance tooling that are not Skills for users.
+@ qnote = Digest confirms intake, quality checklist, examples, references and evals for the sampled Skills.
+@ disc = https://skills.cat/skills/product-on-purpose/pm-skills/skills-discover-interview-synthesis ~ Registry listing of a Skill from the repo
+- deliver-prd | PRD Writer | product | strong | testing | S | prd,requirements | Creates a PRD with problem, scope, requirements and acceptance, using templates and a quality checklist
+- discover-market-sizing | Market Sizing | research | strong | testing | S | tam,market | Estimates TAM, SAM and SOM with several sizing methods and sourcing rules
+- discover-interview-synthesis | Interview Synthesis | customers | strong | testing | S | interviews,synthesis | Synthesizes interviews into patterns and recommendations using a template
+- measure-experiment-design | Experiment Design | growth | strong | testing | S | experiments,ab-test | Designs an A/B test with variants, metrics, sample size and duration
+- foundation-lean-canvas | Lean Canvas | product | strong | testing | S | lean-canvas,strategy | Produces a one-page lean canvas across nine blocks
+- define-problem-statement | Problem Statement | product | adequate | researching | | problem | Frames the problem with user impact and success criteria
+- define-hypothesis | Hypothesis Definition | product | adequate | researching | | hypothesis | Defines a testable hypothesis with metrics and validation approach
+- define-jtbd-canvas | Jobs To Be Done Canvas | customers | adequate | researching | | jtbd | Captures functional, emotional and social jobs of a customer
+- discover-competitive-analysis | Competitive Analysis | research | adequate | researching | | competitors | Compares features, pricing and positioning across competitors
+  + overlaps = coreyhaines31-marketingskills-competitor-profiling
+- discover-journey-map | Customer Journey Map | customers | adequate | researching | | journey | Maps stages, touchpoints and pain points
+- foundation-build-risk-review | Pre-Build Risk Review | product | adequate | researching | | risk | Names the biggest risks before building a feature or product
+- measure-instrumentation-spec | Analytics Instrumentation Spec | analytics | adequate | researching | | events,tracking | Specifies analytics events and properties
+- measure-survey-analysis | Survey Analysis | customers | adequate | researching | | surveys | Turns survey results into segments and insights
+- deliver-launch-checklist | Launch Checklist | product | adequate | researching | | launch | Creates a cross-functional pre-launch checklist
+- iterate-pivot-decision | Pivot or Persevere Decision | product | adequate | researching | | pivot | Documents a pivot decision with evidence
+x skills/utility-update-pm-skills | Update PM Skills | operations | [offtopic] Self-update tooling for the repository's own Skills, not a founder job.
+  + what = Checks for newer releases of the repository's own Skills.
+x utility-pm-skill-builder | PM Skill Builder | development | [offtopic] Contributor tooling for authoring new Skills for this repository.
+  + what = Guides contributors through building a new Skill.
+
+## anthropics/knowledge-work-plugins
+@ fit = Official Anthropic role plugins (marketing, product, sales, small business, data) that a founder can use as a stand-in for missing functions.
+@ notes = Built for Claude Cowork and also compatible with Claude Code per the README. Skills use ~~placeholders for optional connected tools (CRM, email, calendar, ledger).
+@ qnote = Descriptions and outlines reviewed; bodies not read in full.
+@ deps = Best results need connected tools (the Skills refer to CRM, email, calendar or accounting connectors via ~~ placeholders)
+@ disc = https://skillselion.com/skills/anthropics/knowledge-work-plugins/synthesize-research ~ Registry listing of a Skill from the repo
+- marketing/skills/campaign-plan | Campaign Plan | marketing | adequate | researching | | campaign,brief | Generates a campaign brief with objectives, audience, messaging, channels and calendar
+- marketing/skills/competitive-brief | Competitive Messaging Brief | research | adequate | researching | | competitors,positioning | Compares competitor positioning and messaging and finds content gaps
+  + overlaps = coreyhaines31-marketingskills-competitor-profiling
+- marketing/skills/performance-report | Marketing Performance Report | analytics | adequate | researching | | reporting | Builds a marketing performance report with trends, wins and misses
+- product-management/skills/write-spec | Feature Spec Writer | product | adequate | researching | | prd,spec | Writes a feature spec or PRD from a problem statement
+  + overlaps = product-on-purpose-pm-skills-deliver-prd
+- product-management/skills/synthesize-research | Research Synthesis | customers | adequate | researching | | research,synthesis | Synthesizes interviews, surveys and feedback into insights
+  + overlaps = product-on-purpose-pm-skills-discover-interview-synthesis
+- product-management/skills/metrics-review | Product Metrics Review | analytics | adequate | researching | | metrics | Reviews product metrics with trend analysis and actions
+- product-management/skills/roadmap-update | Roadmap Update | product | adequate | researching | | roadmap | Creates or reprioritizes a product roadmap
+- product-management/skills/product-brainstorming | Product Brainstorming | product | adequate | researching | | ideation | Acts as a thinking partner to explore problems and challenge assumptions
+- sales/skills/account-research | Account Research | sales | adequate | researching | | research,prospecting | Researches a target company and contact before outreach
+- sales/skills/call-prep | Sales Call Prep | sales | adequate | researching | | calls | Builds a pre-call brief from account history and context
+- sales/skills/draft-outreach | Draft Outreach | sales | adequate | researching | | outreach | Drafts personalized outreach emails and sequences
+- sales/skills/call-summary | Call Summary | sales | adequate | researching | | calls,followup | Turns a call transcript into a follow-up email and summary
+- small-business/skills/job-post-builder | Hiring Packet Builder | hiring | adequate | testing | S | job-description,interview | Builds a job post, structured interview guide with scoring rubric and offer letter template from a hiring brief
+- small-business/skills/hiring-screener | Applicant Screener | hiring | adequate | researching | | screening | Turns a pile of applications into a ranked shortlist scored against stated criteria
+- small-business/skills/proposal-builder | Proposal Builder | sales | adequate | researching | | proposals | Turns a discovery conversation into a client proposal
+- small-business/skills/cash-flow-snapshot | Cash Flow Snapshot | finance | adequate | researching | | cash,runway | Reads receivables, payables and fixed costs to project cash
+  + deps = Accounting ledger connector (QuickBooks, Xero, MYOB, NetSuite or Zoho Books)
+- small-business/skills/business-pulse | Business Pulse | operations | adequate | researching | | dashboard,briefing | One-page cross-functional business snapshot
+  + deps = Accounting and sales data connectors
+- small-business/skills/contract-review | Contract Review | operations | adequate | researching | | contracts,nda | Lightweight NDA, MSA and vendor contract review; informational, not legal advice
+- finance/skills/variance-analysis | Variance Analysis | finance | adequate | researching | | variance,fpa | Breaks financial variances into drivers with narrative
+- data/skills/analyze | Data Analysis | analytics | adequate | researching | | analysis,sql | Answers data questions from quick lookups to full analyses
+- data/skills/explore-data | Explore a Dataset | analytics | adequate | researching | | profiling | Profiles a dataset's shape, quality and patterns
+- data/skills/validate-data | Validate an Analysis | analytics | adequate | researching | | qa | QA-checks an analysis for methodology, accuracy and bias before sharing
+- data/skills/build-dashboard | Build a Dashboard | analytics | adequate | researching | | dashboard | Builds an interactive HTML dashboard with charts and filters
+- design/skills/design-critique | Design Critique | design | adequate | researching | | ux,review | Gives structured feedback on usability, hierarchy and consistency
+- design/skills/ux-copy | UX Copy | design | adequate | researching | | microcopy | Writes or reviews microcopy, errors, empty states and CTAs
+- customer-support/skills/draft-response | Customer Reply Drafting | customers | adequate | researching | | support | Drafts customer-facing replies tailored to the situation
+- customer-support/skills/ticket-triage | Ticket Triage | customers | adequate | researching | | support,triage | Triages and prioritizes support tickets
+x marketing/skills/email-sequence | Email Sequence | marketing | [duplicate] Same job as marketingskills emails, which has references and evals.
+  + what = Designs multi-email sequences.
+x marketing/skills/seo-audit | SEO Audit | seo | [duplicate] Same job as marketingskills seo-audit, which is longer and ships references and evals.
+  + what = Runs an SEO audit.
+x sales/skills/handle-objection | Handle Objection | sales | [duplicate] Same job as the sales-skills objection-handling Skill, which is far deeper (about 3,700 words).
+  + what = Works through a live objection.
+x sales/skills/rep-context | Rep Context | sales | [offtopic] A sales leader's prep for 1:1s with their reps; not a founder-stage job.
+  + what = Preps a leader for a rep 1:1.
+x finance/skills/sox-testing | SOX Testing | finance | [offtopic] SOX compliance testing for public companies, not early-stage founders.
+  + what = Generates SOX sample selections and workpapers.
+x operations/skills/process-optimization | Process Optimization | operations | [generic] About 160 words of trigger phrases; a general model does this without a Skill.
+  + what = Analyzes and improves business processes.
+x operations/skills/risk-assessment | Risk Assessment | operations | [generic] About 200 words with no structure beyond the prompt.
+  + what = Identifies and mitigates operational risks.
+x human-resources/skills/interview-prep | Interview Prep | hiring | [generic] About 160 words; the hiring packet Skill covers interview design properly.
+  + what = Creates structured interview plans.
+
+## wshobson/agents
+@ fit = The startup-business-analyst plugin targets founders and finance teams who need models, metrics and market sizing.
+@ notes = Part of a large plugin marketplace; only the business plugins were considered.
+@ qnote = Descriptions and outlines reviewed; bodies not read in full.
+@ disc = https://vibeindex.ai/skills/wshobson/agents/startup-financial-modeling ~ Registry listing of a Skill from the repo
+- startup-financial-modeling | Startup Financial Model | finance | adequate | testing | S | financial-model,runway | Builds a multi-year model with revenue, costs, runway and fundraising scenarios
+- startup-metrics-framework | Startup Metrics Framework | finance | adequate | testing | S | saas-metrics,cac,ltv | Tracks and optimizes core SaaS, marketplace and consumer metrics
+- competitive-landscape | Competitive Landscape | research | adequate | researching | | competitors | Analyzes competition and differentiation opportunities
+- team-composition-analysis | Team Composition | hiring | adequate | researching | | team,equity | Designs team structure, hiring plan, compensation and equity allocation
+- kpi-dashboard-design | KPI Dashboard Design | analytics | adequate | researching | | kpi | Designs a KPI dashboard with metric selection
+x market-sizing-analysis | Market Sizing | research | [duplicate] About 290 words pointing to reference files; the product-on-purpose market sizing Skill is far fuller.
+  + overlaps = product-on-purpose-pm-skills-discover-market-sizing
+  + what = Calculates TAM, SAM and SOM.
+
+## phuryn/pm-skills
+@ fit = Product-management Skills for discovery, go-to-market and strategy that a founder can use directly.
+@ notes = Skills are short (median under 500 words) and template-like.
+@ qnote = Descriptions and outlines reviewed. Short bodies mean the added value over a general model is mainly the structure.
+@ disc = https://github.com/phuryn/pm-skills ~ Repository
+- beachhead-segment | Beachhead Market Segment | marketing | adequate | researching | | gtm,segment | Picks the first market segment for launch against explicit criteria
+- ideal-customer-profile | Ideal Customer Profile | customers | adequate | researching | | icp | Identifies the ICP from research data
+- growth-loops | Growth Loops | growth | adequate | researching | | growth-loops | Evaluates five growth loop types for sustainable traction
+- gtm-motions | Go-to-Market Motions | marketing | adequate | researching | | gtm | Compares seven go-to-market motions
+- monetization-strategy | Monetization Strategy | finance | adequate | researching | | monetization | Brainstorms monetization models with risks and validation experiments
+- cohort-analysis | Cohort Analysis | analytics | adequate | researching | | retention,cohorts | Analyzes retention by cohort
+- ab-test-analysis | A/B Test Analysis | analytics | adequate | researching | | ab-test,statistics | Analyzes A/B results for significance and sample size
+x draft-nda | Draft NDA | operations | [offtopic] Generates a legal agreement; the output is legal text a founder should not rely on without a lawyer.
+  + what = Drafts a non-disclosure agreement.
+x review-resume | Resume Review | hiring | [offtopic] Reviews a PM job-seeker's resume, not a founder job.
+  + what = Reviews and tailors a product manager resume.
+x create-prd | Create PRD | product | [duplicate] Same job as the deliver-prd Skill, which is longer and ships templates and evals.
+  + overlaps = product-on-purpose-pm-skills-deliver-prd
+  + what = Creates a product requirements document.
+
+## nimbalyst/skills
+@ fit = Content and product Skills for builders; the README targets product managers, developers and content creators.
+@ qnote = Descriptions and outlines reviewed.
+@ disc = https://github.com/nimbalyst/skills ~ Repository
+- slide-deck-creator | HTML Slide Deck Creator | design | adequate | researching | | slides,pitch-deck | Builds HTML slide decks with a consistent design system
+- sales-enablement | Sales Enablement Materials | sales | adequate | researching | | battlecards,demo | Creates battlecards, demo scripts and go-to-market materials
+x code-analyzer | Code Analyzer | development | [filler] About 100 words; generic review prompt.
+  + what = Analyzes code quality.
+x test-writer | Test Writer | development | [filler] About 110 words; generic test-writing prompt.
+  + what = Generates test coverage.
+x user-research-doc | User Research Doc | customers | [filler] About 120 words; a one-paragraph template.
+  + what = Structures user research findings.
+
+## BrianRWagner/ai-marketing-claude-code-skills
+@ spdx = none-found
+@ assessment = needs_review
+@ licenseEvidence = The README shows an MIT badge, but no LICENSE file exists in the repository.
+@ licenseNotes = A badge is not a license grant. Ask the author to add a LICENSE file before listing.
+@ fit = Marketing frameworks for founders and marketers (positioning, homepage audit, case studies).
+@ qnote = Descriptions and outlines reviewed; bodies not read in full.
+@ disc = https://github.com/BrianRWagner/ai-marketing-claude-code-skills ~ Repository
+- positioning-basics | Positioning Basics | marketing | adequate | license_review | | positioning,value-prop | Helps founders define positioning and a value proposition
+- homepage-audit | Homepage Conversion Audit | growth | adequate | license_review | | homepage,cro | Audits a homepage or landing page for conversion
+- case-study-builder | Case Study Builder | marketing | adequate | license_review | | case-study,social-proof | Turns client wins into case studies
+- testimonial-collector | Testimonial Collector | marketing | adequate | license_review | | testimonials | Collects, scores and formats customer testimonials
+- last30days | Last 30 Days Research | research | adequate | license_review | | trends,reddit | Researches a topic across Reddit, X and the web for the last 30 days
+  + deps = Web and social access; some modes use third-party services
+x plan-my-day | Plan My Day | operations | [offtopic] Personal time-blocking, not a founder-business job.
+  + what = Builds a daily plan.
+x vault-cleanup-auditor | Vault Cleanup Auditor | operations | [offtopic] Cleans an Obsidian vault.
+  + what = Audits an Obsidian vault.
+
+## ericosiu/ai-marketing-skills
+@ fit = Growth workflows from a marketing operator; several are tied to specific vendor tools.
+@ notes = Only about half of this repository's Skills pass the spec check; many have no description.
+@ qnote = Descriptions and outlines reviewed.
+@ disc = https://github.com/ericosiu/ai-marketing-skills ~ Repository
+- outbound-engine | Cold Outbound Engine | sales | adequate | researching | | outbound,instantly | Designs, analyzes and optimizes cold email campaigns
+  + deps = Instantly account and API
+- finance-ops | CFO Briefings from QuickBooks | finance | adequate | researching | | cfo,quickbooks | Generates executive finance briefings from accounting exports
+  + deps = QuickBooks exports
+- content-ops | Content Scoring and Improvement | content | adequate | researching | | content,review | Scores and iteratively improves content using an expert panel
+- x-longform-post | Founder Voice X Long-form | content | adequate | researching | | twitter,founder | Writes long-form X posts and threads in a founder voice
+x sales-playbook | Sales Playbook | sales | [nodesc] No frontmatter description, so an agent cannot discover or trigger it.
+  + what = Sales playbook workflow.
+x seo-ops | SEO Ops | seo | [nodesc] No frontmatter description.
+  + what = SEO operations workflow.
+x revenue-intelligence | Revenue Intelligence | analytics | [nodesc] No frontmatter description.
+  + what = Revenue analysis workflow.
+x video-clip-pipeline | Video Clip Pipeline | content | [offtopic] Video clipping pipeline; media production, not a founder-core job.
+  + what = Clips video content.
+
+## kkoppenhaver/cc-skills
+@ spdx = none-found
+@ assessment = needs_review
+@ licenseEvidence = No root LICENSE file; two Skills reference a LICENSE.txt.
+@ fit = A marketer's personal Claude Code Skills.
+@ disc = https://github.com/kkoppenhaver/cc-skills ~ Repository
+- fact-check | Article Fact-Check | content | adequate | license_review | | fact-check,editing | Extracts verifiable claims from a published article and checks them against research
+x tweet | Tweet Writer | content | [offtopic] Hard-coded to one person's voice ("in Keanan's voice"); not reusable.
+  + what = Writes tweets in the author's voice.
+x linkedin | LinkedIn Writer | content | [offtopic] Hard-coded to one person's voice; not reusable.
+  + what = Writes LinkedIn posts in the author's voice.
+
+## AgriciDaniel/claude-seo
+@ kind = suite
+@ fit = Open-source SEO suite for site audits, content, schema and AI-search optimization; useful to founders who run their own SEO.
+@ agentsExclude = codex
+@ notes = The README presents this as a Claude Code plugin (a separate repo ports it to Codex). The 25+ sub-skills depend on a shared orchestrator, so the suite is listed as one candidate. Needs a Python environment; several extensions need paid data services.
+@ qnote = The orchestrator Skill has 17 reference files. Sub-skills were not read individually.
+@ deps = Python 3.11+ environment; Claude Code plugin install;; Optional paid data MCPs (DataForSEO, Ahrefs and others) for live data
+@ disc = https://claudefa.st/blog/tools/skills/claude-code-seo-skills ~ Comparison of Claude Code SEO repos;;https://pasqualepillitteri.it/en/news/5860/claude-seo-claude-blog-open-source-skills ~ Article describing the suite
+- skills/seo | Claude SEO (suite) | seo | strong | testing | S | seo-suite,audit,schema,geo | Runs full-site SEO audits and single-page analysis through an orchestrator with technical, content, schema, local and AI-search sub-skills
+
+## zubair-trabzada/geo-seo-claude
+@ kind = suite
+@ fit = Generative-engine optimization (AI-search visibility); part of the toolkit is aimed at agencies, with client reports and proposals.
+@ notes = Includes agency tooling (prospect CRM, client proposals) that is not relevant to most founders; the audit, citability and llms.txt parts are.
+@ disc = https://claudefa.st/blog/tools/skills/claude-code-seo-skills ~ Comparison of Claude Code SEO repos
+- geo | GEO Toolkit (suite) | seo | adequate | researching | | geo,ai-search,llms-txt | Audits a site for visibility in AI search with citability, crawler and llms.txt checks
+
+## seranking/seo-skills
+@ fit = SEO Skills powered by one vendor's data.
+@ notes = Every Skill reads data from SE Ranking, so it is only useful with that account.
+@ deps = SE Ranking remote MCP and account
+@ disc = https://github.com/seranking/seo-skills ~ Repository
+- seo-content-brief | SEO Content Brief (SE Ranking) | seo | adequate | researching | | content-brief,keywords | Writes an editor-ready content brief from a domain and topic using SE Ranking data
+- seo-technical-audit | Technical SEO Audit (SE Ranking) | seo | adequate | researching | | technical-seo | Runs a one-shot technical audit with a ranked fix list using SE Ranking data
+
+## aevans-eng/seo-skill
+@ fit = A lightweight SEO audit for small static sites.
+@ disc = https://github.com/aevans-eng/seo-skill ~ Repository
+- . | Static Site SEO Audit | seo | adequate | researching | | seo,static-sites | Audits HTML files for missing SEO basics and adds them
+
+## Bhanunamikaze/Agentic-SEO-Skill
+@ kind = suite
+@ fit = LLM-first SEO analysis suite for agent IDEs.
+@ deps = Python dependencies (requests, beautifulsoup4)
+@ disc = https://www.sourcepulse.org/projects/27026296 ~ Directory listing for the repo
+- . | Agentic SEO (suite) | seo | adequate | researching | | seo-suite | Runs SEO audits with specialist sub-skills for technical, content and schema checks
+
+## ghaida/intent
+@ kind = suite
+@ fit = A UX and design-strategy system for founders who design their own product without a design team.
+@ notes = CC0 licensed (public-domain dedication). 17 Skills route through one entry-point Skill.
+@ qnote = Entry-point Skill is about 6,000 words with 8 reference files.
+@ disc = https://skillselion.com/skills/ghaida/intent/investigate ~ Registry listing of a Skill from the repo
+- intent | Intent (UX and design strategy system) | design | strong | testing | S | ux,design-strategy | Frames design problems and routes to research, journey, wireframe and evaluation Skills
+
+## anthropics/skills
+@ fit = Official Anthropic example Skills; the document and design ones are practical for founders producing decks, models and UI.
+@ notes = Licenses differ per Skill: some folders carry Apache-2.0 and four document Skills carry a proprietary license.
+@ qnote = Descriptions and outlines reviewed.
+@ disc = https://github.com/Ultronprime2026/awesome-agent-skills ~ Awesome list naming the repo
+- frontend-design | Frontend Design | design | strong | researching | | ui,frontend | Guides distinctive, production-grade UI design instead of generic templates
+- canvas-design | Canvas Design | design | adequate | researching | | visual,poster | Creates visual designs as PNG and PDF
+- theme-factory | Theme Factory | design | adequate | researching | | themes | Applies consistent themes to slides, docs and pages
+- web-artifacts-builder | Web Artifacts Builder | development | adequate | researching | | html,artifacts | Builds multi-component HTML artifacts
+- webapp-testing | Web App Testing | development | adequate | researching | | testing,playwright | Tests local web apps with Playwright
+- mcp-builder | MCP Server Builder | development | adequate | researching | | mcp | Guides building MCP servers
+- doc-coauthoring | Document Co-authoring | content | adequate | researching | | docs | Walks through a structured co-authoring workflow
+- internal-comms | Internal Communications | operations | adequate | researching | | comms | Writes internal communications in standard formats
+- pptx | PowerPoint Decks | fundraising | strong | license_review | | pitch-deck,pptx | Creates and edits PowerPoint presentations
+  + why = Founders produce pitch and investor decks as PowerPoint files.
+- xlsx | Spreadsheets | finance | strong | license_review | | spreadsheet,models | Creates and edits spreadsheets and financial models
+- docx | Word Documents | operations | strong | license_review | | docx,documents | Creates and edits Word documents
+x brand-guidelines | Brand Guidelines | design | [offtopic] Applies Anthropic's own brand colors and typography; not reusable by founders.
+  + what = Applies Anthropic's brand styling.
+x template | Skill Template | operations | [filler] A placeholder with a four-word body.
+  + what = Placeholder template.
+x algorithmic-art | Algorithmic Art | design | [offtopic] Generative p5.js art, not a founder job.
+  + what = Creates algorithmic art.
+
+## obra/superpowers
+@ fit = A general AI-coding workflow; useful to founders who build with an AI agent, though not founder-specific.
+@ qnote = Descriptions and outlines reviewed.
+@ disc = https://github.com/obra/superpowers ~ Repository
+- brainstorming | Brainstorming | product | adequate | researching | | ideation,design | Turns a rough idea into a design through structured questions
+- writing-plans | Writing Plans | development | adequate | researching | | planning | Writes an implementation plan before coding
+- systematic-debugging | Systematic Debugging | development | adequate | researching | | debugging | Debugs by gathering evidence before fixing
+
+## guia-matthieu/clawfu-skills
+@ spdx = MIT
+@ assessment = needs_review
+@ licenseEvidence = LICENSE at repository root (MIT); Skill frontmatter says MIT.
+@ licenseNotes = Many Skills are written as "master [author]'s framework from [book]". The repository's MIT license cannot cover third-party books or trademarks it summarizes. Confirm the content is original before listing.
+@ fit = Startup, fundraising and sales methodology Skills.
+@ qnote = Descriptions reviewed. Several are long summaries of well-known frameworks.
+@ disc = https://claudemarketplaces.com/skills/guia-matthieu/clawfu-skills/yc-pitch-deck ~ Registry listing of a Skill from the repo
+- startup/startup-metrics | Startup Metrics | finance | adequate | license_review | | metrics,investors | Explains which metrics matter at each stage and what investors look for
+- startup/fundraising-narrative | Fundraising Narrative | fundraising | adequate | license_review | | pitch,narrative | Structures the story for investors
+- startup/yc-pitch-deck | YC-style Pitch Deck | fundraising | adequate | license_review | | pitch-deck | Builds a pitch deck slide by slide in the YC/Sequoia structure
+- validation/customer-discovery | Customer Discovery | customers | adequate | license_review | | validation | Validates business hypotheses through customer discovery
+x sales/never-split-difference | Negotiation (Voss) | sales | [license] Adapted from a commercial book's method; the repository license does not cover the underlying work.
+  + what = Applies a published negotiation method.
+x funnels/dotcom-secrets | Funnels (Brunson) | marketing | [license] Adapted from a commercial book's framework; provenance of the content unclear.
+  + what = Applies a published funnel framework.
+x strategy/six-thinking-hats | Six Thinking Hats | operations | [generic] A well-known thinking framework a general model already knows; no scripts or templates.
+  + what = Applies a thinking framework.
+x strategy/first-principles | First Principles | operations | [generic] A general reasoning method, not a founder job.
+  + what = Applies first-principles reasoning.
+
+## sachacoldiq/ColdIQ-s-GTM-Skills
+@ spdx = none-found
+@ assessment = needs_review
+@ licenseEvidence = No LICENSE file in the repository.
+@ licenseNotes = Published by a GTM vendor with no license grant. Linking is fine; copying is not.
+@ fit = Cold-outbound and list-building playbooks from a GTM agency.
+@ deps = Vendor tools referenced in the playbooks (for example list-building or sending platforms)
+@ disc = https://composio.dev/content/best-sales-and-gtm-skils ~ Roundup naming the repo
+- master-skills/cold-email | ColdIQ Cold Email | sales | adequate | license_review | | cold-email,outbound | Cold email system with templates, frameworks and benchmarks
+- master-skills/signal-sourcer | Signal Sourcer | sales | adequate | license_review | | signals,leads | Finds buying signals to prioritize outreach
+
+## pedronauck/skills
+@ spdx = none-found
+@ assessment = needs_review
+@ licenseEvidence = No LICENSE file in the repository.
+@ licenseNotes = No license grant. The repository mixes the author's own Skills with community ones, so original sources need tracing.
+@ fit = A curated collection that includes marketing and business Skills.
+@ disc = https://github.com/pedronauck/skills ~ Repository
+- marketing/fundraising | Early-Stage Fundraising Pack | fundraising | adequate | license_review | | fundraising,investors | Plans an early-stage fundraising process and produces a raise memo, pitch outline, investor pipeline and diligence checklist
+  + note = Provenance unclear: the same description appears in a registry under a different repository.
+- marketing/startup-validator | Startup Validator | research | adequate | license_review | | validation,market | Validates a startup idea with market analysis
+x alex-hormozi-pitch | Hormozi Pitch | marketing | [license] Based on a commercial book ($100M Offers); no license grant in the repository.
+  + what = Builds offers using a published methodology.
+
+## louisblythe/Sales-Skills
+@ fit = Sales Skills written for automated sales conversations.
+@ disc = https://github.com/louisblythe/Sales-Skills ~ Repository
+x channel-fallback-logic | Channel Fallback Logic | sales | [license] [offtopic] Runtime behavior for an automated SDR bot, not a founder task; the repository has no license.
+  + what = Switches outreach channels automatically.
+x conversation-memory | Conversation Memory | sales | [license] [offtopic] Runtime behavior for an automated conversation agent; no license in the repository.
+  + what = Remembers prior conversation context.
+
+## aradotso/marketing-skills
+@ fit = Bot-generated collection.
+@ disc = https://vibeindex.ai/collection/aradotso/marketing-skills ~ Directory page describing the bot-generated collection
+x founder-marketing-skills | Founder Marketing Skills | marketing | [filler] The repository README says a bot writes a Skill for each trending repo, and the README still contains an unfilled template placeholder. Skills are auto-generated, not curated.
+  + what = Auto-generated Skill from a trending marketing repository.
+
+## sundial-org/awesome-openclaw-skills
+@ fit = Aggregator collection.
+@ disc = https://claudeskills.info/skills/sundial-org/awesome-openclaw-skills/recruitment/ ~ Registry listing of the recruitment Skill
+x recruitment | Recruitment Automation | hiring | [vendor] Promotes a paid vendor service and requires buying an API key; no license in the repository.
+  + what = Searches the web for candidates and drafts outreach through a paid service.
+
+## pluginagentmarketplace/custom-plugin-product-manager
+@ spdx = proprietary (All Rights Reserved)
+@ assessment = not_ok
+@ licenseEvidence = LICENSE file begins "CUSTOM LICENSE ... All Rights Reserved".
+@ fit = Template-generated product-manager plugin.
+@ disc = https://skillselion.com/skills/pluginagentmarketplace/custom-plugin-product-manager/user-research ~ Registry listing of the Skill
+x user-research | User Research | customers | [license] [filler] Body contains template placeholders such as "Implement user-research functionality"; the license is All Rights Reserved.
+  + what = Generic user research guide.
+
+## ComposioHQ/awesome-claude-skills
+@ fit = Aggregator that includes copies of other publishers' Skills.
+@ disc = https://github.com/InternScience/Awesome-Scientific-Skills ~ Awesome list citing the collection
+x document-skills/docx | Word Documents (copy) | operations | [license] [provenance] A copy of Anthropic's docx Skill, which carries a proprietary license, inside a repository that has no license of its own. Use the original source.
+  + what = Copy of the Anthropic docx Skill.
+
+## justinedevs/collection
+@ fit = A "founder operating system" bundle.
+@ disc = https://skills.sh/justinedevs/collection/startup ~ Registry listing of the bundle
+x startup | Startup Founder Bundle | operations | [generic] An umbrella bundle that routes to many thin sub-skills (median about 400 words); the "operating system" framing is exactly the concept we are avoiding.
+  + what = Bundles founder Skills behind one entry point.
+
+## TayaIntelligence/skills
+@ fit = Product-management Skills for PRDs.
+@ disc = https://github.com/TayaIntelligence/skills ~ Repository
+x technical-pm | Technical PM PRD Writer | product | [duplicate] Same job as deliver-prd and write-spec, with less supporting material.
+  + what = Writes a PRD.
+
+## prepforeverything/prepkit-product
+@ fit = Product discovery and PRD Skills packaged as a Claude Code plugin.
+@ disc = https://github.com/prepforeverything/prepkit-product ~ Repository
+- product-user-interview-design | Interview Design | customers | adequate | researching | | interviews,screener | Designs a qualitative research package with screener, guide and synthesis plan
+
+## CalebLewallen/agent-prod
+@ spdx = none-found
+@ assessment = needs_review
+@ licenseEvidence = No LICENSE file in the repository.
+@ fit = Product-management research Skill.
+@ disc = https://github.com/CalebLewallen/agent-prod ~ Repository
+- pm-research | PM Research Synthesis | customers | adequate | license_review | | research,feedback | Synthesizes feedback, interviews and analytics into a shared context file
+
+## everyinc/charlie-cfo-skill
+@ fit = A bootstrapped-founder finance Skill from a software company.
+@ disc = https://skillselion.com/skills/everyinc/charlie-cfo-skill/charlie ~ Registry listing of the Skill
+- . | Charlie CFO | finance | adequate | researching | | cfo,runway,unit-economics | Models unit economics, runway, pricing tiers and board-ready financial narratives
+
+## f13i/cold-email
+@ fit = A consultancy's cold-outreach workflow packaged as a Skill.
+@ notes = The README says it is one Skill from the author's larger CLI system; check for hidden dependencies before listing.
+@ disc = https://github.com/f13i/cold-email ~ Repository
+- . | f13i Cold Email | sales | adequate | researching | | cold-email,grading | Researches a prospect, drafts an email and grades it before sending
+  + overlaps = coreyhaines31-marketingskills-cold-email,thecraighewitt-sales-skills-cold-email
+
+## Founder Institute AI Skills
+@ kind = website
+@ url = https://fi.co/aiskills
+@ creator = Founder Institute
+@ creatorUrl = https://fi.co
+@ creatorBasis = Published on the organization's own website.
+@ licenseEvidence = The page footer says "All Rights Reserved"; no license for the Skills was found.
+@ licenseNotes = Skills are gated behind registration and distributed as downloads. Rights are unclear. A link to the page is fine; nothing may be copied.
+@ fit = Seven guided founder Skills: idea validation, pitch deck, launch plan, copy, customer knowledge, interview synthesis and founder story.
+@ qualityNote = Not inspected: the Skills are behind a registration wall and only one preview link was visible.
+@ notes = Could not verify content, format or compatibility. Only the page description was read.
+@ sources = https://fi.co/aiskills ~ Public landing page (inspected 2026-10-03);;https://www.thevccorner.com/p/claude-skills-every-founder-should-steal ~ Roundup that surfaced this ecosystem
+- fi | Founder Institute AI Skills (7 guided Skills) | fundraising | unknown | discovered | | pitch-deck,validation,founder-story | Guided founder Skills for validating an idea, building a pitch deck, planning a launch, sharpening copy and synthesizing customer interviews
+
+## aihxp/prd-ready
+@ kind = unreachable
+@ url = https://github.com/aihxp/prd-ready
+@ repoUrl = https://github.com/aihxp/prd-ready
+@ creator = aihxp
+@ creatorUrl = https://github.com/aihxp
+@ creatorBasis = Taken from the repository URL that a search result showed; not verified.
+@ licenseEvidence = Not checked: the repository could not be cloned.
+@ fit = A PRD Skill described in a search result.
+@ qualityNote = Not inspected: the repository could not be cloned (it may be private, renamed or removed).
+@ notes = Recorded so the gap is visible. Do not list until the repository is reachable.
+@ sources = https://github.com/aihxp/prd-ready ~ Search result describing the repository; clone failed on 2026-10-03
+- prd-ready | PRD Ready | product | unknown | discovered | | prd | A PRD-authoring Skill with a research pass on common failure modes, as described in a search result

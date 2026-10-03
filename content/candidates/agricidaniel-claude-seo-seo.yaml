@@ -1,0 +1,85 @@
+id: agricidaniel-claude-seo-seo
+name: Claude SEO (suite)
+summary: Runs full-site SEO audits and single-page analysis through an orchestrator with technical, content,
+  schema, local and AI-search sub-skills
+category: seo
+tags:
+  - seo-suite
+  - audit
+  - schema
+  - geo
+status: testing
+shortlist: true
+sourceType: github_plugin_suite
+sourceUrl: https://github.com/AgriciDaniel/claude-seo/tree/ff87fcee0734845d3f59128c8c905799ee2298da/skills/seo
+repoUrl: https://github.com/AgriciDaniel/claude-seo
+repoSubpath: skills/seo
+pinnedRef: ff87fcee0734845d3f59128c8c905799ee2298da
+inspectedAt: 2026-10-03
+creator:
+  name: AgriciDaniel
+  url: https://github.com/AgriciDaniel
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE.txt in the Skill folder (detected MIT)
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: AgriciDaniel/claude-seo README.md line 78 @ ff87fce mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Open-source SEO suite for site audits, content, schema and AI-search optimization; useful to
+  founders who run their own SEO.
+primaryUse: Runs full-site SEO audits and single-page analysis through an orchestrator with technical,
+  content, schema, local and AI-search sub-skills
+quality:
+  verdict: strong
+  basis: outline_read
+  signals:
+    words: 2517
+    references: 17
+    scripts: 0
+    evals: false
+    structure:
+      - intake step
+      - shared-context file
+      - tables
+      - templates/code blocks
+  assessment: "2517 words; 17 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: intake step, shared-context file,
+    tables, templates/code blocks. The orchestrator Skill has 17 reference files. Sub-skills were not read
+    individually."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: unknown
+  beatsGenericModel: yes
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies:
+  - Python 3.11+ environment; Claude Code plugin install
+  - Optional paid data MCPs (DataForSEO, Ahrefs and others) for live data
+overlapsWith: []
+notes: The README presents this as a Claude Code plugin (a separate repo ports it to Codex). The 25+
+  sub-skills depend on a shared orchestrator, so the suite is listed as one candidate. Needs a Python
+  environment; several extensions need paid data services.
+rejectionReason: ""
+sources:
+  - url: https://github.com/AgriciDaniel/claude-seo/tree/ff87fcee0734845d3f59128c8c905799ee2298da/skills/seo
+    note: Skill folder at the inspected commit
+  - url: https://github.com/AgriciDaniel/claude-seo/blob/ff87fcee0734845d3f59128c8c905799ee2298da/README.md
+    note: Repository README at the inspected commit
+  - url: https://claudefa.st/blog/tools/skills/claude-code-seo-skills
+    note: Comparison of Claude Code SEO repos
+  - url: https://pasqualepillitteri.it/en/news/5860/claude-seo-claude-blog-open-source-skills
+    note: Article describing the suite

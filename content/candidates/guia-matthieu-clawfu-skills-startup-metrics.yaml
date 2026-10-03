@@ -1,0 +1,79 @@
+id: guia-matthieu-clawfu-skills-startup-metrics
+name: Startup Metrics
+summary: Explains which metrics matter at each stage and what investors look for
+category: finance
+tags:
+  - metrics
+  - investors
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/guia-matthieu/clawfu-skills/tree/4108f5c010ccaa8b5707fa05ca1d888ae167e548/skills/startup/startup-metrics
+repoUrl: https://github.com/guia-matthieu/clawfu-skills
+repoSubpath: skills/startup/startup-metrics
+pinnedRef: 4108f5c010ccaa8b5707fa05ca1d888ae167e548
+inspectedAt: 2026-10-03
+creator:
+  name: guia-matthieu
+  url: https://github.com/guia-matthieu
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (MIT); Skill frontmatter says MIT.
+  assessment: needs_review
+  notes: Many Skills are written as "master [author]'s framework from [book]". The repository's MIT license
+    cannot cover third-party books or trademarks it summarizes. Confirm the content is original before
+    listing.
+supportedAgents:
+  - agent: cursor
+    evidence: declared
+    source: guia-matthieu/clawfu-skills README.md line 91 @ 4108f5c mentions it in a compatibility/install context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: guia-matthieu/clawfu-skills README.md line 91 @ 4108f5c mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Startup, fundraising and sales methodology Skills.
+primaryUse: Explains which metrics matter at each stage and what investors look for
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 3212
+    references: 0
+    scripts: 2
+    evals: false
+    structure:
+      - intake step
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "3212 words; 0 reference file(s); 2 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: intake step, tables, templates/code
+    blocks, examples. Descriptions reviewed. Several are long summaries of well-known frameworks."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: unknown
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: ""
+sources:
+  - url: https://github.com/guia-matthieu/clawfu-skills/tree/4108f5c010ccaa8b5707fa05ca1d888ae167e548/skills/startup/startup-metrics
+    note: Skill folder at the inspected commit
+  - url: https://github.com/guia-matthieu/clawfu-skills/blob/4108f5c010ccaa8b5707fa05ca1d888ae167e548/README.md
+    note: Repository README at the inspected commit
+  - url: https://claudemarketplaces.com/skills/guia-matthieu/clawfu-skills/yc-pitch-deck
+    note: Registry listing of a Skill from the repo

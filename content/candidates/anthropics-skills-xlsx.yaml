@@ -1,0 +1,74 @@
+id: anthropics-skills-xlsx
+name: Spreadsheets
+summary: Creates and edits spreadsheets and financial models
+category: finance
+tags:
+  - spreadsheet
+  - models
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/xlsx
+repoUrl: https://github.com/anthropics/skills
+repoSubpath: skills/xlsx
+pinnedRef: 8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4
+inspectedAt: 2026-10-03
+creator:
+  name: anthropics
+  url: https://github.com/anthropics
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: proprietary/restrictive (read the file)
+  evidence: LICENSE.txt in the Skill folder (proprietary/restrictive (read the file))
+  assessment: needs_review
+  notes: The Skill folder has its own license that is not a standard permissive license. Read it before listing.
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: anthropics/skills README.md line 51 @ 8a1541c mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Official Anthropic example Skills; the document and design ones are practical for founders
+  producing decks, models and UI.
+primaryUse: Creates and edits spreadsheets and financial models
+quality:
+  verdict: strong
+  basis: outline_read
+  signals:
+    words: 1149
+    references: 0
+    scripts: 2
+    evals: false
+    structure:
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "1149 words; 0 reference file(s); 2 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: tables, templates/code blocks,
+    examples. Descriptions and outlines reviewed."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: unknown
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: yes
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: "Licenses differ per Skill: some folders carry Apache-2.0 and four document Skills carry a proprietary
+  license."
+rejectionReason: ""
+sources:
+  - url: https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/xlsx
+    note: Skill folder at the inspected commit
+  - url: https://github.com/anthropics/skills/blob/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/Ultronprime2026/awesome-agent-skills
+    note: Awesome list naming the repo

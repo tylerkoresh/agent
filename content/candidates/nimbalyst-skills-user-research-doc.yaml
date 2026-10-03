@@ -1,0 +1,68 @@
+id: nimbalyst-skills-user-research-doc
+name: User Research Doc
+summary: Structures user research findings.
+category: customers
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/nimbalyst/skills/tree/8822f1ef9a9ea2382c158a0e7a26423046b641d6/skills/research/user-research-doc
+repoUrl: https://github.com/nimbalyst/skills
+repoSubpath: skills/research/user-research-doc
+pinnedRef: 8822f1ef9a9ea2382c158a0e7a26423046b641d6
+inspectedAt: 2026-10-03
+creator:
+  name: nimbalyst
+  url: https://github.com/nimbalyst
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 8822f1e
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: nimbalyst/skills README.md line 3 @ 8822f1e mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Content and product Skills for builders; the README targets product managers, developers and
+  content creators.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 123
+    references: 0
+    scripts: 0
+    evals: false
+    structure: []
+  assessment: "123 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. No intake, template, checklist or table structure detected.
+    Descriptions and outlines reviewed."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: no
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: About 120 words; a one-paragraph template.
+sources:
+  - url: https://github.com/nimbalyst/skills/tree/8822f1ef9a9ea2382c158a0e7a26423046b641d6/skills/research/user-research-doc
+    note: Skill folder at the inspected commit
+  - url: https://github.com/nimbalyst/skills/blob/8822f1ef9a9ea2382c158a0e7a26423046b641d6/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/nimbalyst/skills
+    note: Repository

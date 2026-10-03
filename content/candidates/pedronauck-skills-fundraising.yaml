@@ -1,0 +1,76 @@
+id: pedronauck-skills-fundraising
+name: Early-Stage Fundraising Pack
+summary: Plans an early-stage fundraising process and produces a raise memo, pitch outline, investor pipeline
+  and diligence checklist
+category: fundraising
+tags:
+  - fundraising
+  - investors
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/pedronauck/skills/tree/0422940cea5d9960b3697016d1cb28c8ed02b030/skills/marketing/fundraising
+repoUrl: https://github.com/pedronauck/skills
+repoSubpath: skills/marketing/fundraising
+pinnedRef: 0422940cea5d9960b3697016d1cb28c8ed02b030
+inspectedAt: 2026-10-03
+creator:
+  name: pedronauck
+  url: https://github.com/pedronauck
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: No LICENSE file in the repository.
+  assessment: needs_review
+  notes: No license grant. The repository mixes the author's own Skills with community ones, so original sources
+    need tracing.
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: pedronauck/skills README.md line 3 @ 0422940 mentions it in a compatibility/install context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: pedronauck/skills README.md line 78 @ 0422940 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: A curated collection that includes marketing and business Skills.
+primaryUse: Plans an early-stage fundraising process and produces a raise memo, pitch outline, investor
+  pipeline and diligence checklist
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1121
+    references: 7
+    scripts: 0
+    evals: false
+    structure:
+      - examples
+  assessment: "1121 words; 7 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: "Provenance unclear: the same description appears in a registry under a different repository."
+rejectionReason: ""
+sources:
+  - url: https://github.com/pedronauck/skills/tree/0422940cea5d9960b3697016d1cb28c8ed02b030/skills/marketing/fundraising
+    note: Skill folder at the inspected commit
+  - url: https://github.com/pedronauck/skills/blob/0422940cea5d9960b3697016d1cb28c8ed02b030/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/pedronauck/skills
+    note: Repository

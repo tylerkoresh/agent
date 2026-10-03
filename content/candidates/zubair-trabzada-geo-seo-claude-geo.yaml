@@ -1,0 +1,72 @@
+id: zubair-trabzada-geo-seo-claude-geo
+name: GEO Toolkit (suite)
+summary: Audits a site for visibility in AI search with citability, crawler and llms.txt checks
+category: seo
+tags:
+  - geo
+  - ai-search
+  - llms-txt
+status: researching
+shortlist: false
+sourceType: github_plugin_suite
+sourceUrl: https://github.com/zubair-trabzada/geo-seo-claude/tree/ea29bd291a0b52648ef92a80d84a2e1f89ef754b/geo
+repoUrl: https://github.com/zubair-trabzada/geo-seo-claude
+repoSubpath: geo
+pinnedRef: ea29bd291a0b52648ef92a80d84a2e1f89ef754b
+inspectedAt: 2026-10-03
+creator:
+  name: zubair-trabzada
+  url: https://github.com/zubair-trabzada
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ ea29bd2
+  assessment: ok_to_link
+  notes: ""
+supportedAgents: []
+founderRelevance: Generative-engine optimization (AI-search visibility); part of the toolkit is aimed at
+  agencies, with client reports and proposals.
+primaryUse: Audits a site for visibility in AI search with citability, crawler and llms.txt checks
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1449
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - shared-context file
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "1449 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: shared-context file, tables,
+    templates/code blocks, examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: unknown
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: Includes agency tooling (prospect CRM, client proposals) that is not relevant to most founders; the
+  audit, citability and llms.txt parts are.
+rejectionReason: ""
+sources:
+  - url: https://github.com/zubair-trabzada/geo-seo-claude/tree/ea29bd291a0b52648ef92a80d84a2e1f89ef754b/geo
+    note: Skill folder at the inspected commit
+  - url: https://github.com/zubair-trabzada/geo-seo-claude/blob/ea29bd291a0b52648ef92a80d84a2e1f89ef754b/README.md
+    note: Repository README at the inspected commit
+  - url: https://claudefa.st/blog/tools/skills/claude-code-seo-skills
+    note: Comparison of Claude Code SEO repos

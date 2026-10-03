@@ -1,0 +1,75 @@
+id: pedronauck-skills-startup-validator
+name: Startup Validator
+summary: Validates a startup idea with market analysis
+category: research
+tags:
+  - validation
+  - market
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/pedronauck/skills/tree/0422940cea5d9960b3697016d1cb28c8ed02b030/skills/marketing/startup-validator
+repoUrl: https://github.com/pedronauck/skills
+repoSubpath: skills/marketing/startup-validator
+pinnedRef: 0422940cea5d9960b3697016d1cb28c8ed02b030
+inspectedAt: 2026-10-03
+creator:
+  name: pedronauck
+  url: https://github.com/pedronauck
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: No LICENSE file in the repository.
+  assessment: needs_review
+  notes: No license grant. The repository mixes the author's own Skills with community ones, so original sources
+    need tracing.
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: pedronauck/skills README.md line 3 @ 0422940 mentions it in a compatibility/install context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: pedronauck/skills README.md line 78 @ 0422940 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: A curated collection that includes marketing and business Skills.
+primaryUse: Validates a startup idea with market analysis
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1390
+    references: 2
+    scripts: 1
+    evals: false
+    structure:
+      - templates/code blocks
+      - examples
+  assessment: "1390 words; 2 reference file(s); 1 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: templates/code blocks, examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: ""
+sources:
+  - url: https://github.com/pedronauck/skills/tree/0422940cea5d9960b3697016d1cb28c8ed02b030/skills/marketing/startup-validator
+    note: Skill folder at the inspected commit
+  - url: https://github.com/pedronauck/skills/blob/0422940cea5d9960b3697016d1cb28c8ed02b030/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/pedronauck/skills
+    note: Repository

@@ -1,0 +1,73 @@
+id: anthropics-skills-webapp-testing
+name: Web App Testing
+summary: Tests local web apps with Playwright
+category: development
+tags:
+  - testing
+  - playwright
+status: researching
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/webapp-testing
+repoUrl: https://github.com/anthropics/skills
+repoSubpath: skills/webapp-testing
+pinnedRef: 8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4
+inspectedAt: 2026-10-03
+creator:
+  name: anthropics
+  url: https://github.com/anthropics
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: Apache-2.0
+  evidence: LICENSE.txt in the Skill folder (detected Apache-2.0)
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: anthropics/skills README.md line 51 @ 8a1541c mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Official Anthropic example Skills; the document and design ones are practical for founders
+  producing decks, models and UI.
+primaryUse: Tests local web apps with Playwright
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 466
+    references: 0
+    scripts: 1
+    evals: false
+    structure:
+      - templates/code blocks
+      - examples
+  assessment: "466 words; 0 reference file(s); 1 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: templates/code blocks, examples.
+    Descriptions and outlines reviewed."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: "Licenses differ per Skill: some folders carry Apache-2.0 and four document Skills carry a proprietary
+  license."
+rejectionReason: ""
+sources:
+  - url: https://github.com/anthropics/skills/tree/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/skills/webapp-testing
+    note: Skill folder at the inspected commit
+  - url: https://github.com/anthropics/skills/blob/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/Ultronprime2026/awesome-agent-skills
+    note: Awesome list naming the repo

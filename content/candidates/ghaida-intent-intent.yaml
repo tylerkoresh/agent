@@ -1,0 +1,72 @@
+id: ghaida-intent-intent
+name: Intent (UX and design strategy system)
+summary: Frames design problems and routes to research, journey, wireframe and evaluation Skills
+category: design
+tags:
+  - ux
+  - design-strategy
+status: testing
+shortlist: true
+sourceType: github_plugin_suite
+sourceUrl: https://github.com/ghaida/intent/tree/b89a519eb570fe7ec61de1eb51f553af0306b515/skills/intent
+repoUrl: https://github.com/ghaida/intent
+repoSubpath: skills/intent
+pinnedRef: b89a519eb570fe7ec61de1eb51f553af0306b515
+inspectedAt: 2026-10-03
+creator:
+  name: ghaida
+  url: https://github.com/ghaida
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: CC0-1.0
+  evidence: LICENSE at repository root (detected CC0-1.0) @ b89a519
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: ghaida/intent README.md line 79 @ b89a519 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: A UX and design-strategy system for founders who design their own product without a design team.
+primaryUse: Frames design problems and routes to research, journey, wireframe and evaluation Skills
+quality:
+  verdict: strong
+  basis: outline_read
+  signals:
+    words: 6203
+    references: 8
+    scripts: 0
+    evals: false
+    structure:
+      - intake step
+      - tables
+      - templates/code blocks
+  assessment: "6203 words; 8 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: intake step, tables, templates/code
+    blocks. Entry-point Skill is about 6,000 words with 8 reference files."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: yes
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: CC0 licensed (public-domain dedication). 17 Skills route through one entry-point Skill.
+rejectionReason: ""
+sources:
+  - url: https://github.com/ghaida/intent/tree/b89a519eb570fe7ec61de1eb51f553af0306b515/skills/intent
+    note: Skill folder at the inspected commit
+  - url: https://github.com/ghaida/intent/blob/b89a519eb570fe7ec61de1eb51f553af0306b515/README.md
+    note: Repository README at the inspected commit
+  - url: https://skillselion.com/skills/ghaida/intent/investigate
+    note: Registry listing of a Skill from the repo

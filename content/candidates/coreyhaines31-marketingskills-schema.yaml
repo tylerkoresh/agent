@@ -1,0 +1,85 @@
+id: coreyhaines31-marketingskills-schema
+name: Schema Markup
+summary: Adds, fixes and validates structured data markup
+category: seo
+tags:
+  - schema
+  - structured-data
+status: researching
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/coreyhaines31/marketingskills/tree/dda3841f0b294e01e93b1541486beefbfab0915e/skills/schema
+repoUrl: https://github.com/coreyhaines31/marketingskills
+repoSubpath: skills/schema
+pinnedRef: dda3841f0b294e01e93b1541486beefbfab0915e
+inspectedAt: 2026-10-03
+creator:
+  name: coreyhaines31
+  url: https://github.com/coreyhaines31
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ dda3841
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: coreyhaines31/marketingskills README.md line 3 @ dda3841 mentions it in a compatibility/install context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: coreyhaines31/marketingskills README.md line 3 @ dda3841 mentions it in a compatibility/install context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: coreyhaines31/marketingskills README.md line 3 @ dda3841 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: The repository README says it is built for technical marketers and founders.
+primaryUse: Adds, fixes and validates structured data markup
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 680
+    references: 1
+    scripts: 0
+    evals: true
+    structure:
+      - intake step
+      - shared-context file
+      - tables
+      - checklists
+      - templates/code blocks
+      - examples
+  assessment: "680 words; 1 reference file(s); 0 script(s); evals: yes. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: intake step, shared-context file,
+    tables, checklists, templates/code blocks, examples. Structure checked on a sample via digest: intake
+    step, shared-context file, references, evals. Only pricing was read in full."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: Every Skill ships an evals.json with test prompts and expected assertions; Skills read an optional
+  shared product-marketing context file.
+rejectionReason: ""
+sources:
+  - url: https://github.com/coreyhaines31/marketingskills/tree/dda3841f0b294e01e93b1541486beefbfab0915e/skills/schema
+    note: Skill folder at the inspected commit
+  - url: https://github.com/coreyhaines31/marketingskills/blob/dda3841f0b294e01e93b1541486beefbfab0915e/README.md
+    note: Repository README at the inspected commit
+  - url: https://www.sourcepulse.org/projects/22945338
+    note: Directory listing describing the repo

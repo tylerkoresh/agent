@@ -1,0 +1,76 @@
+id: sachacoldiq-coldiq-s-gtm-skills-cold-email
+name: ColdIQ Cold Email
+summary: Cold email system with templates, frameworks and benchmarks
+category: sales
+tags:
+  - cold-email
+  - outbound
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills/tree/78eb53f7f02810a9810408aaf74b8af1ea35281e/master-skills/cold-email
+repoUrl: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills
+repoSubpath: master-skills/cold-email
+pinnedRef: 78eb53f7f02810a9810408aaf74b8af1ea35281e
+inspectedAt: 2026-10-03
+creator:
+  name: sachacoldiq
+  url: https://github.com/sachacoldiq
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: No LICENSE file in the repository.
+  assessment: needs_review
+  notes: Published by a GTM vendor with no license grant. Linking is fine; copying is not.
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: sachacoldiq/ColdIQ-s-GTM-Skills README.md line 193 @ 78eb53f mentions it in a compatibility/install
+      context
+    note: ""
+founderRelevance: Cold-outbound and list-building playbooks from a GTM agency.
+primaryUse: Cold email system with templates, frameworks and benchmarks
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1321
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - intake step
+      - shared-context file
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "1321 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: intake step, shared-context file,
+    tables, templates/code blocks, examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: yes
+  testable: unknown
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies:
+  - Vendor tools referenced in the playbooks (for example list-building or sending platforms)
+overlapsWith: []
+notes: ""
+rejectionReason: ""
+sources:
+  - url: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills/tree/78eb53f7f02810a9810408aaf74b8af1ea35281e/master-skills/cold-email
+    note: Skill folder at the inspected commit
+  - url: https://github.com/sachacoldiq/ColdIQ-s-GTM-Skills/blob/78eb53f7f02810a9810408aaf74b8af1ea35281e/README.md
+    note: Repository README at the inspected commit
+  - url: https://composio.dev/content/best-sales-and-gtm-skils
+    note: Roundup naming the repo

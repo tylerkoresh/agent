@@ -1,0 +1,72 @@
+id: refoundai-lenny-skills-naming-and-branding
+name: Naming and Branding
+summary: Creates memorable names and brand identity
+category: marketing
+tags:
+  - naming
+  - brand
+status: license_review
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/refoundai/lenny-skills/tree/13598cc54e09399bc1bc1398b0fca284110efb2f/skills/naming-and-branding
+repoUrl: https://github.com/refoundai/lenny-skills
+repoSubpath: skills/naming-and-branding
+pinnedRef: 13598cc54e09399bc1bc1398b0fca284110efb2f
+inspectedAt: 2026-10-03
+creator:
+  name: refoundai
+  url: https://github.com/refoundai
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (MIT). README says the Skills are distilled from Lenny's Podcast and
+    Newsletter, with quotes checked against source transcripts.
+  assessment: needs_review
+  notes: The MIT license covers this repository's own text. It cannot grant rights over the underlying podcast
+    and newsletter material or its verbatim quotes. Confirm the repository's right to share it before listing.
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: refoundai/lenny-skills README.md line 19 @ 13598cc mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Distilled founder and product guidance (fundraising, ICP, first customers, pricing, PMF)
+  from the archive of Lenny's Podcast and Newsletter, per the README.
+primaryUse: Creates memorable names and brand identity
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 1206
+    references: 2
+    scripts: 0
+    evals: false
+    structure: []
+  assessment: "1206 words; 2 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. No intake, template, checklist or table structure detected.
+    Descriptions and outlines reviewed. Bodies not read in full."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: unknown
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: Each Skill cites source episodes; structure is a short guide plus references.
+rejectionReason: ""
+sources:
+  - url: https://github.com/refoundai/lenny-skills/tree/13598cc54e09399bc1bc1398b0fca284110efb2f/skills/naming-and-branding
+    note: Skill folder at the inspected commit
+  - url: https://github.com/refoundai/lenny-skills/blob/13598cc54e09399bc1bc1398b0fca284110efb2f/README.md
+    note: Repository README at the inspected commit
+  - url: https://claudskills.com/skills/fundraising-refoundai-lenny-skills/
+    note: Registry listing of the fundraising Skill

@@ -1,0 +1,52 @@
+id: aihxp-prd-ready-prd-ready
+name: PRD Ready
+summary: A PRD-authoring Skill with a research pass on common failure modes, as described in a search result
+category: product
+tags:
+  - prd
+status: discovered
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/aihxp/prd-ready
+repoUrl: https://github.com/aihxp/prd-ready
+repoSubpath: ""
+pinnedRef: ""
+creator:
+  name: aihxp
+  url: https://github.com/aihxp
+  basis: Taken from the repository URL that a search result showed; not verified.
+license:
+  spdx: unknown
+  evidence: "Not checked: the repository could not be cloned."
+  assessment: unknown
+  notes: ""
+supportedAgents: []
+founderRelevance: A PRD Skill described in a search result.
+primaryUse: A PRD-authoring Skill with a research pass on common failure modes, as described in a search result
+quality:
+  verdict: unknown
+  basis: metadata_only
+  signals: {}
+  assessment: "Not inspected: the repository could not be cloned (it may be private, renamed or removed)."
+specConformance: unchecked
+gates:
+  useful: unknown
+  specificJob: unknown
+  clearDescription: unknown
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: unknown
+  testable: unknown
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: Recorded so the gap is visible. Do not list until the repository is reachable.
+rejectionReason: ""
+sources:
+  - url: https://github.com/aihxp/prd-ready
+    note: Search result describing the repository; clone failed on 2026-10-03

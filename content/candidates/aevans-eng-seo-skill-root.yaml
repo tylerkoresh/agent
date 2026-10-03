@@ -1,0 +1,70 @@
+id: aevans-eng-seo-skill-root
+name: Static Site SEO Audit
+summary: Audits HTML files for missing SEO basics and adds them
+category: seo
+tags:
+  - seo
+  - static-sites
+status: researching
+shortlist: false
+sourceType: github_plugin_suite
+sourceUrl: https://github.com/aevans-eng/seo-skill/tree/5ba1717a0a5cff1642beaa8746d8645d12c0bbcf
+repoUrl: https://github.com/aevans-eng/seo-skill
+repoSubpath: ""
+pinnedRef: 5ba1717a0a5cff1642beaa8746d8645d12c0bbcf
+inspectedAt: 2026-10-03
+creator:
+  name: aevans-eng
+  url: https://github.com/aevans-eng
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 5ba1717
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: aevans-eng/seo-skill README.md line 3 @ 5ba1717 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: A lightweight SEO audit for small static sites.
+primaryUse: Audits HTML files for missing SEO basics and adds them
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 824
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - tables
+      - templates/code blocks
+  assessment: "824 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: tables, templates/code blocks."
+specConformance: fail
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: "Spec checks failed: nameMatchesDir."
+rejectionReason: ""
+sources:
+  - url: https://github.com/aevans-eng/seo-skill/tree/5ba1717a0a5cff1642beaa8746d8645d12c0bbcf
+    note: Skill folder at the inspected commit
+  - url: https://github.com/aevans-eng/seo-skill/blob/5ba1717a0a5cff1642beaa8746d8645d12c0bbcf/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/aevans-eng/seo-skill
+    note: Repository

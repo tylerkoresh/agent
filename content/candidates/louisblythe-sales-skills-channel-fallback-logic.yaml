@@ -1,0 +1,68 @@
+id: louisblythe-sales-skills-channel-fallback-logic
+name: Channel Fallback Logic
+summary: Switches outreach channels automatically.
+category: sales
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/louisblythe/Sales-Skills/tree/e0f13a6eb41be22fa1f8493b148077cdd6c6654a/skills/channel-fallback-logic
+repoUrl: https://github.com/louisblythe/Sales-Skills
+repoSubpath: skills/channel-fallback-logic
+pinnedRef: e0f13a6eb41be22fa1f8493b148077cdd6c6654a
+inspectedAt: 2026-10-03
+creator:
+  name: louisblythe
+  url: https://github.com/louisblythe
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: none-found
+  evidence: No LICENSE file found in the repository or Skill folder
+  assessment: needs_review
+  notes: "No license grant found. Default copyright applies: linking is fine; copying or redistributing is not."
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: louisblythe/Sales-Skills README.md line 3 @ e0f13a6 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Sales Skills written for automated sales conversations.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 1330
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - templates/code blocks
+      - examples
+  assessment: "1330 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: templates/code blocks, examples."
+specConformance: pass
+gates:
+  useful: no
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: no
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: ""
+rejectionReason: Runtime behavior for an automated SDR bot, not a founder task; the repository has no license.
+sources:
+  - url: https://github.com/louisblythe/Sales-Skills/tree/e0f13a6eb41be22fa1f8493b148077cdd6c6654a/skills/channel-fallback-logic
+    note: Skill folder at the inspected commit
+  - url: https://github.com/louisblythe/Sales-Skills/blob/e0f13a6eb41be22fa1f8493b148077cdd6c6654a/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/louisblythe/Sales-Skills
+    note: Repository

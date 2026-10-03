@@ -1,0 +1,82 @@
+id: wshobson-agents-market-sizing-analysis
+name: Market Sizing
+summary: Calculates TAM, SAM and SOM.
+category: research
+tags: []
+status: rejected
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/wshobson/agents/tree/156b7a5e7a8b93642628a339ee4039c925b34c7f/plugins/startup-business-analyst/skills/market-sizing-analysis
+repoUrl: https://github.com/wshobson/agents
+repoSubpath: plugins/startup-business-analyst/skills/market-sizing-analysis
+pinnedRef: 156b7a5e7a8b93642628a339ee4039c925b34c7f
+inspectedAt: 2026-10-03
+creator:
+  name: wshobson
+  url: https://github.com/wshobson
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 156b7a5
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: wshobson/agents README.md line 4 @ 156b7a5 mentions it in a compatibility/install context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: wshobson/agents README.md line 7 @ 156b7a5 mentions it in a compatibility/install context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: wshobson/agents README.md line 7 @ 156b7a5 mentions it in a compatibility/install context
+    note: ""
+  - agent: github-copilot
+    evidence: declared
+    source: wshobson/agents README.md line 7 @ 156b7a5 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: The startup-business-analyst plugin targets founders and finance teams who need models,
+  metrics and market sizing.
+primaryUse: ""
+quality:
+  verdict: weak
+  basis: outline_read
+  signals:
+    words: 288
+    references: 2
+    scripts: 0
+    evals: false
+    structure:
+      - examples
+  assessment: "288 words; 2 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: examples. Descriptions and outlines
+    reviewed; bodies not read in full."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: no
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith:
+  - product-on-purpose-pm-skills-discover-market-sizing
+notes: Part of a large plugin marketplace; only the business plugins were considered.
+rejectionReason: About 290 words pointing to reference files; the product-on-purpose market sizing Skill is far fuller.
+sources:
+  - url: https://github.com/wshobson/agents/tree/156b7a5e7a8b93642628a339ee4039c925b34c7f/plugins/startup-business-analyst/skills/market-sizing-analysis
+    note: Skill folder at the inspected commit
+  - url: https://github.com/wshobson/agents/blob/156b7a5e7a8b93642628a339ee4039c925b34c7f/README.md
+    note: Repository README at the inspected commit
+  - url: https://vibeindex.ai/skills/wshobson/agents/startup-financial-modeling
+    note: Registry listing of a Skill from the repo

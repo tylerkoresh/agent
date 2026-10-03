@@ -1,0 +1,77 @@
+id: seranking-seo-skills-seo-technical-audit
+name: Technical SEO Audit (SE Ranking)
+summary: Runs a one-shot technical audit with a ranked fix list using SE Ranking data
+category: seo
+tags:
+  - technical-seo
+status: researching
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/seranking/seo-skills/tree/fd6d1408f2e6a06454d81c07c29e0f04342eb9ba/skills/seo-technical-audit
+repoUrl: https://github.com/seranking/seo-skills
+repoSubpath: skills/seo-technical-audit
+pinnedRef: fd6d1408f2e6a06454d81c07c29e0f04342eb9ba
+inspectedAt: 2026-10-03
+creator:
+  name: seranking
+  url: https://github.com/seranking
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ fd6d140
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: seranking/seo-skills README.md line 74 @ fd6d140 mentions it in a compatibility/install context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: seranking/seo-skills README.md line 59 @ fd6d140 mentions it in a compatibility/install context
+    note: ""
+founderRelevance: SEO Skills powered by one vendor's data.
+primaryUse: Runs a one-shot technical audit with a ranked fix list using SE Ranking data
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 2479
+    references: 1
+    scripts: 0
+    evals: false
+    structure:
+      - intake step
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "2479 words; 1 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: intake step, tables, templates/code
+    blocks, examples."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: unknown
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies:
+  - SE Ranking remote MCP and account
+overlapsWith: []
+notes: Every Skill reads data from SE Ranking, so it is only useful with that account.
+rejectionReason: ""
+sources:
+  - url: https://github.com/seranking/seo-skills/tree/fd6d1408f2e6a06454d81c07c29e0f04342eb9ba/skills/seo-technical-audit
+    note: Skill folder at the inspected commit
+  - url: https://github.com/seranking/seo-skills/blob/fd6d1408f2e6a06454d81c07c29e0f04342eb9ba/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/seranking/seo-skills
+    note: Repository

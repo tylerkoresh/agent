@@ -1,0 +1,68 @@
+id: everyinc-charlie-cfo-skill-root
+name: Charlie CFO
+summary: Models unit economics, runway, pricing tiers and board-ready financial narratives
+category: finance
+tags:
+  - cfo
+  - runway
+  - unit-economics
+status: researching
+shortlist: false
+sourceType: github_plugin_suite
+sourceUrl: https://github.com/everyinc/charlie-cfo-skill/tree/429f61bc0eb728cbc88db22cb1b1b1be6f21cafb
+repoUrl: https://github.com/everyinc/charlie-cfo-skill
+repoSubpath: ""
+pinnedRef: 429f61bc0eb728cbc88db22cb1b1b1be6f21cafb
+inspectedAt: 2026-10-03
+creator:
+  name: everyinc
+  url: https://github.com/everyinc
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 429f61b
+  assessment: ok_to_link
+  notes: ""
+supportedAgents: []
+founderRelevance: A bootstrapped-founder finance Skill from a software company.
+primaryUse: Models unit economics, runway, pricing tiers and board-ready financial narratives
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 703
+    references: 2
+    scripts: 0
+    evals: false
+    structure:
+      - tables
+      - templates/code blocks
+      - examples
+  assessment: "703 words; 2 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: tables, templates/code blocks, examples."
+specConformance: fail
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: unknown
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: "Spec checks failed: nameMatchesDir."
+rejectionReason: ""
+sources:
+  - url: https://github.com/everyinc/charlie-cfo-skill/tree/429f61bc0eb728cbc88db22cb1b1b1be6f21cafb
+    note: Skill folder at the inspected commit
+  - url: https://github.com/everyinc/charlie-cfo-skill/blob/429f61bc0eb728cbc88db22cb1b1b1be6f21cafb/README.md
+    note: Repository README at the inspected commit
+  - url: https://skillselion.com/skills/everyinc/charlie-cfo-skill/charlie
+    note: Registry listing of the Skill

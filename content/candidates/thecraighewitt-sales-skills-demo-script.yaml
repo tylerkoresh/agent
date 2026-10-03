@@ -1,0 +1,85 @@
+id: thecraighewitt-sales-skills-demo-script
+name: Demo Script
+summary: Builds a tailored product demo script
+category: sales
+tags:
+  - demo
+status: researching
+shortlist: false
+sourceType: github_skill_folder
+sourceUrl: https://github.com/TheCraigHewitt/sales-skills/tree/75cdb8c856876986a937d4bc2c9697ea13643b8c/skills/demo-script
+repoUrl: https://github.com/TheCraigHewitt/sales-skills
+repoSubpath: skills/demo-script
+pinnedRef: 75cdb8c856876986a937d4bc2c9697ea13643b8c
+inspectedAt: 2026-10-03
+creator:
+  name: TheCraigHewitt
+  url: https://github.com/TheCraigHewitt
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 75cdb8c
+  assessment: ok_to_link
+  notes: ""
+supportedAgents:
+  - agent: claude-code
+    evidence: declared
+    source: TheCraigHewitt/sales-skills README.md line 17 @ 75cdb8c mentions it in a compatibility/install context
+    note: ""
+  - agent: codex
+    evidence: declared
+    source: TheCraigHewitt/sales-skills README.md line 19 @ 75cdb8c mentions it in a compatibility/install context
+    note: ""
+  - agent: cursor
+    evidence: declared
+    source: TheCraigHewitt/sales-skills README.md line 19 @ 75cdb8c mentions it in a compatibility/install context
+    note: ""
+founderRelevance: Covers founder-relevant B2B selling (outreach, discovery, objections, proposals); the README
+  positions it for sales professionals and revenue leaders, so some Skills assume a sales team.
+primaryUse: Builds a tailored product demo script
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 4043
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - intake step
+      - shared-context file
+      - tables
+      - checklists
+      - templates/code blocks
+      - examples
+  assessment: "4043 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed;
+    the full body was not read line by line. Structural features found: intake step, shared-context file,
+    tables, checklists, templates/code blocks, examples. Structure checked via digest for cold-email,
+    outbound-sequence and objection-handling; discovery-call was read in part."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: yes
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith: []
+notes: Uses the same shared-context convention as marketingskills (.agents/sales-context.md). No attribution
+  to marketingskills was found, and derivation was not established.
+rejectionReason: ""
+sources:
+  - url: https://github.com/TheCraigHewitt/sales-skills/tree/75cdb8c856876986a937d4bc2c9697ea13643b8c/skills/demo-script
+    note: Skill folder at the inspected commit
+  - url: https://github.com/TheCraigHewitt/sales-skills/blob/75cdb8c856876986a937d4bc2c9697ea13643b8c/README.md
+    note: Repository README at the inspected commit
+  - url: https://tomevault.io/tome/TheCraigHewitt/sales-skills
+    note: Directory listing for the repo

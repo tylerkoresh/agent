@@ -63,6 +63,12 @@ npm run test:e2e                           # 14 browser tests against the produc
 E2E covers browsing, search, categories, Skill pages, install.md, 404s, 375px layout, axe accessibility, internal links,
 console errors, and the full admin flow (validation, publish, edit, unpublish, import, export).
 
+## Curation (Stage 2)
+
+The real catalog is built by *discover → evaluate → verify → curate → import*. Candidates live in `content/candidates/`
+(never shown on the site) and only an `approved` candidate can be promoted to a draft in `content/skills/`.
+See `docs/CURATION.md` for the workflow and `research/REPORT.md` for the current research findings.
+
 ## Sample data
 
 `content/samples/` holds 9 fixtures flagged `isSample`. They are labelled "Sample data" in the UI and hidden when

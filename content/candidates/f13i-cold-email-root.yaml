@@ -1,0 +1,69 @@
+id: f13i-cold-email-root
+name: f13i Cold Email
+summary: Researches a prospect, drafts an email and grades it before sending
+category: sales
+tags:
+  - cold-email
+  - grading
+status: researching
+shortlist: false
+sourceType: github_plugin_suite
+sourceUrl: https://github.com/f13i/cold-email/tree/032d0b49a2e2fe56092e02067d8fcbb19fca49ca
+repoUrl: https://github.com/f13i/cold-email
+repoSubpath: ""
+pinnedRef: 032d0b49a2e2fe56092e02067d8fcbb19fca49ca
+inspectedAt: 2026-10-03
+creator:
+  name: f13i
+  url: https://github.com/f13i
+  basis: GitHub repository owner. Authorship of individual Skills inside the repository was not verified.
+license:
+  spdx: MIT
+  evidence: LICENSE at repository root (detected MIT) @ 032d0b4
+  assessment: ok_to_link
+  notes: ""
+supportedAgents: []
+founderRelevance: A consultancy's cold-outreach workflow packaged as a Skill.
+primaryUse: Researches a prospect, drafts an email and grades it before sending
+quality:
+  verdict: adequate
+  basis: outline_read
+  signals:
+    words: 780
+    references: 0
+    scripts: 0
+    evals: false
+    structure:
+      - tables
+      - templates/code blocks
+  assessment: "780 words; 0 reference file(s); 0 script(s); evals: no. Structure and headings were reviewed; the
+    full body was not read line by line. Structural features found: tables, templates/code blocks."
+specConformance: pass
+gates:
+  useful: yes
+  specificJob: yes
+  clearDescription: yes
+  identifiableSource: yes
+  identifiableCreator: yes
+  licenseKnown: yes
+  agentsDeterminable: unknown
+  testable: yes
+  beatsGenericModel: unknown
+  comfortableRecommending: unknown
+testing:
+  status: not_tested
+  notes: ""
+dependencies: []
+overlapsWith:
+  - coreyhaines31-marketingskills-cold-email
+  - thecraighewitt-sales-skills-cold-email
+notes: The README says it is one Skill from the author's larger CLI system; check for hidden dependencies
+  before listing.
+rejectionReason: ""
+sources:
+  - url: https://github.com/f13i/cold-email/tree/032d0b49a2e2fe56092e02067d8fcbb19fca49ca
+    note: Skill folder at the inspected commit
+  - url: https://github.com/f13i/cold-email/blob/032d0b49a2e2fe56092e02067d8fcbb19fca49ca/README.md
+    note: Repository README at the inspected commit
+  - url: https://github.com/f13i/cold-email
+    note: Repository
